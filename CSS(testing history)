@@ -1,0 +1,33 @@
+/* теплий мінімалізм */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff8e7;
+    width: auto;
+    height: 1000px;
+}
+label {
+    color: #4b4b4b;
+    float: center;
+    display: inline;
+    font-size: 20px;
+    font-family: monospace;
+    width: auto;
+    height: auto;
+}
+
+input{
+    color: #4b4b4b; 
+    display: block;
+    background-color:  #fffdf8;
+    border: 3px solid  #d4a373;
+    border-radius: 10px;
+}
+input:hover {
+    color: #cfa270;
+    background-color:  #fff8f0;
+    border: 3px solid black;
+    border-radius: 11px;
+}
