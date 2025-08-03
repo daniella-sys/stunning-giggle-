@@ -1,0 +1,83 @@
+//1
+const input_question_1 = document.getElementById('question_1');
+//It will found action which I'm enter 
+input_question_1.addEventListener('change', function(){
+    alert('Ви успішно відповіли на перше запитання!');
+});
+
+
+//2
+const input_question_2 = document.getElementById('question_2');
+input_question_2.addEventListener('change', function(){
+    alert('Ви успішно відповіли на друге запитання!');
+});
+
+
+//3
+const input_question_3 = document.getElementById('question_3');
+input_question_3.addEventListener('change', function(){
+    alert('Ви успішно відповіли на третє запитання!');
+});
+
+
+//4
+const input_question_4 = document.getElementById('question_4');
+input_question_4.addEventListener('change', function(){
+    alert('Ви успішно відповіли на четверте запитання!');
+});
+
+
+//5
+const input_question_5 = document.getElementById('question_5');
+input_question_5.addEventListener('change', function(){
+    alert('Ви успішно відповіли на пяте запитання!');
+});
+
+
+//6 
+const input_question_6 = document.getElementById('question_6');
+input_question_6.addEventListener('change', function(){
+    alert('Ви успішно відповіли на шосте запитання!');
+});
+
+
+//7
+const input_question_7 = document.getElementById('question_7');
+input_question_7.addEventListener('change', function(){
+    alert('Ви успішно відповіли на сьоме запитання!');
+});
+
+
+//8
+const input_question_8 = document.getElementById('question_8');
+input_question_8.addEventListener('change', function(){
+    alert('Bи успішно відповіли на восьме запитання!');
+});
+
+
+//9
+const input_question_9 = document.getElementById('question_9');
+input_question_9.addEventListener('change', function(){
+    alert('Bи успішно відповіли на девяте запитання!');
+});
+
+
+//10
+const input_question_10 = document.getElementById('question_10');
+input_question_10.addEventListener('change', function(){
+    alert('Ви успішно відповіли на десяте завдання');
+});
+
+
+//11
+const input_question_11 = document.getElementById('question_11');
+input_question_11.addEventListener('change', function(){
+    alert('Ви успішно відповіли на одинадцяте запитання!');
+});
+
+
+//12
+const input_question_12 = document.getElementById('question_12');
+input_question_12.addEventListener('change', function(){
+    alert('Ви успішно відповіли на дванадцяте завдання');
+});
