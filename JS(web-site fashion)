@@ -1,0 +1,5 @@
+const kkk = document.getElementById('ghg');
+kkk.addEventListener('click', function(){
+    alert('Ви вже отримали інформацію про нас')
+});
+
