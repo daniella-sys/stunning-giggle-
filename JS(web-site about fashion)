@@ -1,0 +1,48 @@
+</html>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Перевірка спливаючого вікна</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+</style>
+   
+</head>
+<body>
+    <!-- Підключення JavaScript файлу -->
+    <!-- Attractive!!! -->
+    Heloyyy  
+<!--Necessory form-->
+<div>Fashion 2025</div>
+<div>You will see anywhere.</div>
+<h1>Autumn is fashion’s big annual reset—and luckily enough for our collective closets, 2025’s fall fashion trends are perhaps even more exciting than usual. As with last year, boho is still at the forefront, with romantic lace dresses, suede boots, and faux-fur coats giving off a distinctly ’70s vibe. But the look is evolving: Washed-out plaids and cropped trenches are bringing things firmly into a new era, and making our wardrobes all the more versatile for it.
+Beyond earth tones and sheer materials, though, fall will also be defined by bolder swings. The color of the season is a bright, almost artificial purple, and exaggerated proportions and gigantic paillettes are also trending and ready to help you make a splash at your next dressed-up event. Ready to bring your rotation up to speed? These are the major fall fashion trends our editors are shopping now.</h1>
+<img src="https://media.glamour.com/photos/688a35d46f407ac9767293df/3:4/w_640,c_limit/Product%20(45).png" id="one">
+<h2>Kallmeyer Chloé Bib Button-Down</h2>
+<img src="https://media.glamour.com/photos/6879226795b5bd92c22f2324/3:4/w_640,c_limit/Aritzia%20(Re)ssential%20Effortless%20Pants.png" id="two">
+<h3>Aritzia (Re)ssential Effortless Pants</h3>
+<img src="https://media.glamour.com/photos/688a357a794a4d4628d59f42/3:4/w_640,c_limit/Product%20(44).png" id="three">
+<h4>Gap Drop-Waist Maxidress</h4>
+<!--table-->
+<table id="ghg">
+    <thead>Information about us.</thead>
+    <tr>
+        <th>telegram</th>
+        <th>instagram</th>
+        <th>facebook</th>
+ </tr>
+ <tbody>
+    <tr>
+        <td>@fashion_2025</td>
+        <td>@fashion_2025</td>
+        <td>@fashion_2025</td>
+    </tr>
+ </tbody>
+ <tfoot>Introduce us!</tfoot>
+</table>
+<script src="indexmain.js"></script>
+</body>
+</html>
+<!--End-->
