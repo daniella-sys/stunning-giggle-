@@ -1,0 +1,16 @@
+//масив даних про сайт
+var made_up= [link, h, Image, p, table];
+var main = [Headers, body, main, footer];
+made_up[0];
+main[1];
+
+//for picture
+function btnClick(){
+    document.getElementById("one_picture").style.border ='5px solid green';
+}
+function btnClick(){
+    document.getElementById('two_picture').style.border ='5px solid green';
+}
+function btnClick(){
+    document.getElementById('three_picture').style.border = '5px solid green';
+}
