@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Перевірка спливаючого вікна</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <style>
+
+</style>
+
+  
+</head>
+<body>
+    <!-- Підключення JavaScript файлу -->
+    <!-- Attractive!!! -->
+    Heloyyy  
+<!--Necessory form-->
+<h1>Допоможемо вам з приготуванням їжі.</h1>
+<img src="https://www.rbc.ua/static/img/f/r/freepik_kuhnya_gotovit_143d75fbb3ee851a915939050a4e81fe_1200x675.jpg" id="one_picture" onclick="btnClick()">
+<img src="https://shuba.life/static/content/thumbs/1200x630/d/9f/ngo46l---c1200x630x50px50p-up--a84dee68a6fccb0b6e41393b9065f9fd.jpg" id="two_picture" onclick="btnClick()">
+<img src="https://etnoxata.com.ua/image/cache/catalog/image/catalog/stat3/06_2016/07_06_16/03.webp" id="three_picture" onclick="btnClick()">
+<h2>Ласкаво просимо на мій сайт</h2>
+<h3>
+Відкрийте для себе найсмачніші рецепти та страви, які я готую з любов'ю.
+</h3>
+<input type="button" value="Дізнатись більше"/>
+<h4>Про нас </h4>
+<h5>Мій сайт - це місце, де я ділюся своїм кулінарним досвідом та найкращими рецептами. Я вірю, що готування - це мистецтво, яке об'єднує нас, та надихає до нових кулінарних відкриттів.</h5>
+<img src="https://ukr.media/static/ba/aimg/3/7/9/379386_1.jpg" id="four_picture">
+<h6>Про наші послуги</h6>
+<img src="https://medova.poltava.ua/_bl/0/08520375.jpg" id="ndnm">
+<img src="https://klopotenko.com/wp-content/uploads/2020/05/domashnij-hlib_sitewebukrnew.jpg?v=1626470284" id="five_picture">
+<img src="https://hips.hearstapps.com/hmg-prod/images/bcacfded-198f-4492-899c-da0e4457a247.jpg?crop=1xw:1xh;center,top&resize=980:*" id="six_picture">
+<p id="one_text"> Рецепти</p>
+ 
+<p id="two_text">Поради</p>
+<p id="three_text">Відгуки</p>
+<p id="four_text">У цьому розділі ви знайдете унікальні рецепти на будь-який смак. Я поділюся з вами секретами готування та порадами для створення найсмачніших страв.</p>
+<p id="five_text">Отримайте корисні поради щодо підбору інгредієнтів, кулінарних технік та способів приготування, які допоможуть вам стати справжнім майстром кулінарного мистецтва.</p>
+<p id="six_text">Довідайтеся, що кажуть мої клієнти про мої страви та обслуговування. Ваші відгуки допомагають мені стати кращим та надихають на нові кулінарні досягнення.</p>
+<p id="seven_text">Мій сайт</p>
+<table>
+    <td>+380........</td>
+    <td>info@my_own_web-side</td>
+    <td>вулиця Незалежності 1. м. Кропивницький</td>
+    <td>Політика конфіденційності Заява про доступність</td>
+</table>
+<script src="indexmain.js"></script>
+</body>
+</html>
+<!--End-->
