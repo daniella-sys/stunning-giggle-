@@ -1,0 +1,15 @@
+//алгорит if,else практика написання коду 
+var Image = document.querySelector('img'); //цей селектр відповідає за вибір першого фото на сторінці 
+Image.onclick = function(){//обробник події при натисканні
+    var MySrc = Image.getAttribute('src');//atribute
+    if(MySrc == 'way'){
+        Image.setAttribute('src', 'way');
+
+    } else {
+        Image.setAttribute('src', 'way');
+        
+    }
+}
+
+
+
