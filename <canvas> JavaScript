@@ -1,0 +1,20 @@
+var canvas = document.getElementById('my1');
+var ctx = canvas.getContext("2d");
+//draw img
+//window.onload = function() {
+  //var canvas = document.getElementById('my1');
+  //var ctx = canvas.getContext('2d');
+  //var img = document.getElementById('image1');
+  //ctx.drawImage(img, 10, 10);
+//};
+//draw circus
+ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.stroke();
+//draw лінія 
+ctx.moveTo(0, 0);
+ctx.lineTo(200, 100);
+ctx.stroke();
+//draw text
+ctx.font = '30px Arial';
+ctx.fillText('Hello', 10, 50);
