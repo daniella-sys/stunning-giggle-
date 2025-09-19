@@ -1,0 +1,26 @@
+const one = document.getElementById('one');
+//It will found action which I'm enter 
+one.addEventListener('change', function(){
+    alert('успішно');
+});
+const two = document.getElementById('two');
+//It will found action which I'm enter 
+two.addEventListener('change', function(){
+    alert('успішно');
+});
+const three = document.getElementById('three');
+//It will found action which I'm enter 
+three.addEventListener('change', function(){
+    alert('успішно');
+});
+const four = document.getElementById('four');
+//It will found action which I'm enter 
+four.addEventListener('change', function(){
+    alert('успішно');
+});
+const five = document.getElementById('five');
+//It will found action which I'm enter 
+five.addEventListener('change', function(){
+    alert('успішно');
+});
+
