@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Перевірка спливаючого вікна</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <style>
+
+</style>
+    <h1>Форма реєстрації</h1>
+    <form>
+        <input type="name" placeholder="Введіть ім'я" maxlength="20" id="one"><br></br>
+        <input type="lastname" placeholder="Введіть прізвище" maxlength="15" id="two"><br></br>
+        <input type="password" placeholder="Введіть пароль " maxlength="19" id="three"><br></br>
+        <input type="email" placeholder="Введіть gmail" maxlength="30" id="four"><br></br>
+        <input type="submit"  placeholder="Готово" id="five"><br></br>
+    </form>
+
+<h2>Створено за допомогою та спільнотою @bogdana</h2>
+<script src="indexmain.js"></script>
+</body>
+</html>
+<!--End-->
