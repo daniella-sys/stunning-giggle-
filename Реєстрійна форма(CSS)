@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/002/276/716/non_2x/abstract-geometric-background-in-flat-design-free-vector.jpg');
+    width: 300px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 1700px;
+
+}
+h1{
+    display: inline-block;
+    float: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-left: 230%;
+    border: 9 px solid lightgreen;
+    border-radius: 20px;
+    margin-top: 50%;
+    
+}
+#one{
+ display: inline-block;
+    float: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-left: 230%;
+    border: 9 px solid lightgreen;
+    border-radius: 20px;
+    
+}
+#two{
+    display: inline-block;
+    float: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-left: 230%;
+    border: 9 px solid lightgreen;
+    border-radius: 20px;
+    
+}
+#three{
+    display: inline-block;
+    float: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-left: 230%;
+    border: 9 px solid lightgreen;
+    border-radius: 20px;
+    
+}
+#four{
+    display: inline-block;
+    float: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-left: 230%;
+    border: 9 px solid lightgreen;
+    border-radius: 20px;
+    
+}
+#five{
+    display: inline-block;
+    float: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-left: 230%;
+    border: 9 px solid lightgreen;
+    border-radius: 20px;
+    
+}
+h2{
+    margin-top: 80%;
+    height: auto;
+    width: auto;
+    size: 8%;
+}
+h2{
+    size: 2px;
+    
+}
