@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #BC8F8F;
+    width: 300px;
+    height: auto;
+    overflow-x: hidden;
+
+}
+#one{
+    border: 2px solid black;
+    border-radius: 23%;
+    display: inline-block;
+    float: left;
+    margin-block: 0 1%;
+    margin: 200%;
+    margin-top: 0%;
+    width: 300%;  
+    height: 100%;
+}
+h1{
+    display: inline-block;
+    margin: 0%;
+    position:absolute;
+    top: 10px;
+    left: 20px;
+    
+}
+h2{
+    display: inline-block;
+    margin: 0%;
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+
+}
+h3{
+    display: inline-block;
+    margin: 0%;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+#two{
+    display: inline-block;
+    height: 260px;
+    margin-left: 10px;
+    width: 400px;
+    position: initial;
+    margin-top: -1220px;
+    border: 2px black solid;
+    border-radius: 25%;
+    position:relative;
+}
+h4{
+    display: inline-block;
+    margin: 0%;
+    position: absolute;
+    bottom: -190px
+    
+}
+#three{
+    display: inline-block;
+    margin: 0%;
+    height: 270px;
+    position: relative;
+    width: 450px;
+    margin-left: 500px;
+    top: -268px;
+    border-radius:25%;
+    border: 2px black solid;  
+}
+h5{
+    display:inline-block;
+    margin: 0%;
+    position: absolute;
+    bottom: -150px;
+    left: 610px;
+}
+#four{
+    display:inline-block;
+    margin: 0%;
+    position: relative;
+    width: 400px;
+    height: 280px;
+    margin-left: 1000px;
+    top: -550px ;  
+    border-radius: 25%;
+    border: 2px black solid;
+    
+}
+h6{
+     display:inline-block;
+    margin: 0%;
+    position: absolute;
+    bottom: -160px;
+    left: 1000px;
+}
+#five{
+    display:inline-block;
+    margin: 0%;
+    position: relative;
+    width: 400px;
+    height: 280px;
+    margin-left: 1000px;
+    top: -550px ;  
+    border-radius: 25%;
+    border: 2px black solid;
+    
+}
+#six{
+     display: inline-block;
+    margin: 0%;
+    height: 270px;
+    position: relative;
+    width: 450px;
+    margin-left: 500px;
+    top: -300px;
+    border-radius:25%;
+    border: 2px black solid;
+    right: 6px;
+    
+}
