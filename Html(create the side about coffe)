@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Перевірка спливаючого вікна</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <style>
+
+</style>
+    <img src="https://media.istockphoto.com/id/1476204112/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%87%D0%B0%D1%88%D0%BA%D0%B0-%D0%BA%D0%B0%D0%B2%D0%B8-%D0%B2-%D0%BA%D0%B0%D1%84%D0%B5-%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D0%BE%D0%BC%D1%83-%D0%BF%D0%BE%D0%B2%D1%96%D1%82%D1%80%D1%96.jpg?s=612x612&w=0&k=20&c=4AD-leNzsmM4ZO04s6rcRhQ-Cvp6VdYaB-iDGGllQnI=" id="one"/>
+    <h1>ЛАСКАВО ПРОСИМО</h1>
+    <h2>Дізнайтеся про різні сорти кави</h2>
+   
+    <h3> Типи кави </h3>
+    <img src="https://optipak.com.ua/wp-content/uploads/2023/02/latte.jpg" id="two"/>
+    <h4>Latte – це кавовий напій,<br></br>
+        який складається з еспресо та молока, <br></br>
+        який подається в тонкому стінці.<br></br>
+         Назва “латте” походить <br></br>
+        від італійського слова “латте”, що означає молоко.</h4>
+    <img src="https://sunrisecoffee.ua/content/images/26/1200x400e80nn0/amerykano-35442765771423.jpg" id="three"/>
+    <h5>Americano – це своєрідна чорна кава.<br></br>
+         Назва “Americano” пов’язана з історією<br></br>
+          Другої світової війни, <br></br>
+         коли американські солдати, перебуваючи в Європі, <br></br>
+         розбавляли еспресо гарячою водою, <br></br>
+         щоб зробити її менш сильною.</h5>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Doppio.jpg" id="four"/>
+    <h6>Dopio – це кавовий напій, <br></br>
+        який є подвійним еспресо, <br></br>
+        який використовує подвійну кількість кавових зерен та подвійний об’єм води. <br></br>
+        Також цей напій можна готувати за допомогою подвійної порції молока, <br></br>
+        яка створює більш вершкову консистенцію. Назва “Доппіо” <br></br>
+        походить від італійської мови означає “подвійний”.</h6>
+  <!--- <p id="chill out">УСЕ ЦЕ ТИПИ КАВИ</p>-->
+  <!--  <img src="https://optipak.com.ua/wp-content/uploads/2023/02/cortado-coffee.jpg" id="five"/> -->
+   
+
+<!----   <img src="https://optipak.com.ua/wp-content/uploads/2023/02/kofe-so-ldom.jpg" id="six"/> -->
+    
+  <!--- <img src="https://ukr.media/static/ba/aimg/3/7/1/371449_5.jpg" id="seven"/>-->
+
+  <!--<img src="https://novynarnia.com/wp-content/uploads/2023/12/kava-v-kapsulah_2.webp" id="hgh">-->
+
+<!--<img src="https://ukr.media/static/ba/aimg/3/7/1/371449_2.jpg" id="bb">-->
+
+    <strong>Контактна інформація про нас</strong>
+<form>
+    <input type="email" value="email*" id="white"/>
+    <input type="checkbox" value="Yes, subscribe me to your newsletter.*" id="blue"/>
+    <input type="submit" value="submit" id="green"/>
+
+</form>
+<p> +380(056)081<span style="color: black;" id="red"></span> \ </p><br></br>
+<p> info@miysaitcom<span style="color: black;" id="green"></span> </p><br></br>
+<p>вул. Незалежності, 1, 6поверх, м.Кропивницький, 25031 <span style='color:black;' id="text"></span></p><br></br>
+<p> Політика конфіденційності Заява про доступність Правила доставки Умови й положення Правила повернення коштів<span style='color:black;' id="music"></span></p><br></br>
+
+<script src="indexmain.js"></script>
+</body>
+</html>
+<!--End-->
