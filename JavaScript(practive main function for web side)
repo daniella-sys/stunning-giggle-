@@ -1,0 +1,74 @@
+//found id
+//поле для введення 
+const found = document.getElementById('mainTitle');
+//for element with class
+const foundone = document.querySelector('.subtitle');
+//for create element div
+const create = document.createElement('div');
+//add text
+create.textContent = 'Новий блок';
+//add div to body
+//тому що сказано додати до body
+mainTitle.body.appendChild(create);
+ 
+//2
+const foundthree = document.getElementById('actionBtn');
+//for onclick
+const createone =document.addEventListener('click', function(){
+    alert('Кнопку натиснуто!');
+});
+
+
+//3
+const foundfive = document.getElementById('changeText');
+//edit text on new
+foundfive.textContent = 'Hello!';
+//change color
+foundfive.style.color = 'red';
+
+
+//4
+const item = document.getElementById('myList');
+//create a new element
+const create_elem = document.createElement('li');
+//create a text for li
+create_elem.textContent = 'Перший пункт';
+//add in li
+item.li.appendChild(create_elem); //Ми додаємо створений елемент (create_elem) до списку (item), а не навпаки.
+
+//5
+const yrg = document.getElementById('colorBtn');
+//під час кліку має вспливати текст 
+yrg.addEventListener('click', function() {
+    alert('Вітаю!');
+    yrg.textContent = 'Натиснуто!';  // Змінюємо текст кнопки тут
+});
+//addEventListener додається до конкретного елемента (yrg), не до всього документа
+
+//Зміну тексту потрібно робити всередині функції обробника
+
+//6 
+const ghh = document.getElementById('styleBox');
+//change text 
+ghh.textContent = 'Оновлений текст';
+//I need to change color text
+ghh.style.color = 'blue';
+//background change
+ghh.style.background = 'pink'; 
+
+//7
+const qq = document.getElementById('content');
+//create a new element 
+const ll = document.createElement('h2');
+//add text
+ll.textContent = 'Мій заголовок';
+//li add to id
+qq.appendChild(ll);
+
+//8
+const rr = document.getElementById('toggleBtn');
+//під час кліку повинна зявитись повідомлення 
+rr.addEventListener('click', function(){
+    alert("Режим змінено!");
+    rr.textContent = 'Активно';
+});
