@@ -1,0 +1,20 @@
+#include <iostream>
+int main() {
+	int a;
+	a = 46;
+	int b;
+	b = 8778;
+	std::cout << a;
+	std::cout << b;
+
+	short num6 = 16;
+	std::cout << num6;
+	long num8 = 89878997;
+	std::cout << num8;
+	float num7 = 1.79f;
+	std::cout << num7;
+	bool qq = true;
+	std::cout << qq;
+
+	return 0;
+}
