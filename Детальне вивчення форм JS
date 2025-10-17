@@ -1,0 +1,57 @@
+//поле для пошуку
+//const search = document.getElementById('searchInput');
+//const search_1 = document.getElementById('searchButton');
+//const search_2 = document.getElementById('searchResults');
+//const search_3 = document.getElementById('errorMessage');
+
+//new
+const search = document.getElementById('userInput');
+const search_1 = document.getElementById('actionButton');
+const search_2 = document.getElementById('output');
+//обробник події на кнопку 
+search_1.addEventListener('click', function(){
+    const userInput = search.value;
+    search_2.textContent = userInput; //userInput(id) search це змінна з якої треба вивести текст далі в search_2 треба покласти ніби то текст
+});
+
+const begin = document.getElementById('birthYear');
+const main = document.getElementById('calculateButton');
+const hidden = document.getElementById('ageResult');
+//обробник події
+main.addEventListener('click', function(){
+    const birthYear = begin.value; //отримання інформації з поля
+    hidden.textContent = birthYear;
+});
+
+const gg = document.getElementById('searchInput');
+const hh = document.getElementById('searchBtn');
+const dd = document.getElementById('clearBtn');
+const oo = document.getElementById('result');
+//обробник подій 
+hh.addEventListener('click', function(){
+    const searchText = gg.value;  // Отримали текст з поля
+    oo.textContent = searchText;  // Вивели текст в блок
+    // ↑ ВСЕ! 
+});
+
+const jj = document.getElementById('myInput');
+const qq = document.getElementById('myButton');
+const ww = document.getElementById('myDiv');
+//обробник події
+qq.addEventListener('click',function(){
+    const myInput = jj.value;
+    ww.textContent = myInput;
+});
+
+const kk = document.getElementById('sourceInput');
+const cc = document.getElementById('copyButton');
+const ll = document.getElementById('outputBox1');
+const xx = document.getElementById('outputBox2');
+//обробник події
+cc.addEventListener('click', function(){
+const sourceInput = kk.value;
+ll.textContent = sourceInput;
+xx.textContent = sourceInput;
+});
+
+
