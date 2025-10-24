@@ -1,0 +1,101 @@
+/поле для пошуку
+const qq = document.getElementById('passwordInput');
+const oo = document.getElementById('checkPasswordBtn');
+const aa = document.getElementById('passwordResult');
+//обробник події для кнопки
+oo.addEventListener('click', function(){
+    const password = qq.value;
+    if(password.lenght >= 8){
+aa.textContent = "Надійний пароль";
+    }else{
+        aa.textContent = 'Пароль закороткий';
+
+    }
+});//тому що перевірка для пароля
+
+//поле для пошуку
+const ss = document.getElementById('emailInput');
+const jj = document.getElementById('checkEmailBtn');
+const ff = document.getElementById('emailResult');
+//обробник події
+jj.addEventListener('click', function(){
+const emailInput = ss.value;
+if(emailInput.includes('@')){
+    ff.textContent = 'Email валідний';
+    ff.className = "valid";// вказати клас елемента
+}else{
+    ff.textContent = "Email невалідний (має містити @)"
+}
+console.log(ff);
+});
+
+const mm = document.getElementById('colorBtn');
+const dd = document.getElementById('colorBox');
+//обробник події 
+mm.addEventListener('click', function(){
+ dd.style.backgroundColor = 'coral';
+});
+
+const ii = document.getElementById('taskInput');
+const gg = document.getElementById('addTaskBtn');
+const nn = document.getElementById('errorMessage');
+const xx = document.getElementById('taskList');
+//
+gg.addEventListener('click', function(){
+//отримали текст з поля
+    const taskInput = ii.value;
+    if(ii.value !== ""){
+        const ul = document.createElement('li');
+        ul.textContent = taskInput;
+        ul.classList.add('task-item');
+        xx.appendChild(ul);
+        ii.value = '';
+
+    }else{
+        nn.textContent = 'Будь ласка, введіть завдання!'
+    }
+
+});
+
+const vv = document.getElementById('nameInput');
+const bb = document.getElementById('phoneInput');
+const pp = document.getElementById('addContactBtn');
+const bhbb= document.getElementById('contactMessage');
+const knk = document.getElementById('contactsList');
+
+//
+pp.addEventListener('click', function(){
+const nameInput = vv.value;
+const phoneInput = bb.value;
+if(vv.value !=='' && bb.value !== ''){
+const contact = document.createElement('div');
+contact.textContent = 'BOB, 0987654546';
+contact.classList.add('contact-item');
+knk.appendChild(contact);
+vv.value = '';
+message.textContent = 'Контакт додано!';
+}else{
+    message.textContent = 'Заповніть всі поля';
+}
+});
+
+
+const yy = document.getElementById('todoInput');
+const jghg = document.getElementById('addTodoBtn');
+const hjgfd = document.getElementById('todoMessage');
+const ppop = document.getElementById('todoList');
+//
+jghg.addEventListener('click', function(){
+    const howareyou = yy.value;
+    if(yy.value !== ''){
+        const create = document.createElement('div');
+        create.textContent = howareyou;
+        create.classList.add('task');
+        ppop.appendChild(create);
+        //очистити поле
+        create.value = '';
+        message.textContent = 'Справу додано!';
+    }else{
+      message.textContent = 'Введіть справу';
+    }
+})
