@@ -1,0 +1,102 @@
+//для прикладу 
+const qq = document.getElementById('temperature');
+const gg = document.getElementById('checkTemp');
+const ff = document.getElementById('weatherResult');
+
+gg.addEventListener('click', function(){
+    // Отримуємо температуру з поля
+    const temperature = qq.value;
+    
+    // Перевіряємо умови
+    if(temperature >= 25) {
+        ff.textContent = "Спекотно! ";
+    } else if(temperature <= 10) {
+        ff.textContent = "Холодно! ";
+    } else {
+        ff.textContent = "Комфортна температура! ";
+    }
+});
+
+const grade = document.getElementById('gradeInput');
+const checkbutton = document.getElementById('checkGradeBtn');
+const grade_result = document.getElementById('gradeResult');
+checkbutton.addEventListener('click', function(){
+const text = grade.value;
+
+if(text === 12){
+    grade_result.textContent = "Відмінно";
+} else if( text >= 9){
+    grade_result.textContent = 'Добре! ';
+} else if(text >= 6) {
+    grade_result.textContent = 'Задовільно';
+} else {
+    grade_result.textContent = 'Погано';
+}
+
+});
+
+
+const input = document.getElementById('priceInput');
+const age_input = document.getElementById('ageInput');
+const calculator = document.getElementById('calculateBtn');
+const result = document.getElementById('discountResult');
+
+calculator.addEventListener('click', function(){
+    const price = input.value;
+    const age = age_input.value;
+
+    if(age >= 65 && price >= 1000){
+        result.textContent = 'Знижка 20%! ';
+    }else if(age <= 18 && price >= 500){
+        result.textContent = 'Знижка 15%';
+    }else{
+        result.textContent = 'Знижки немає ';
+    }
+});
+
+const type = document.getElementById('userAge');
+const select = document.getElementById('movieRating');
+const button = document.getElementById('checkAccessBtn');
+const res = document.getElementById('accessResult');
+
+button.addEventListener('click', function(){
+    const select_type = select.value;
+    const age_type = type.value;
+    
+    if(select_type =="G"){
+        res.textContent = 'Доступ відкрито';
+
+    }else if(select_type == 'PG' && age_type >= 13){
+        res.textContent = 'Доступ дозволено з батьками';
+    }else if(select_type == 'R' && age_type >= 18){
+        res.textContent = "Доступ дозволено";
+    }else{
+        res.textContent = 'Доступ заборонено';
+    }
+});
+
+const input_type = document.getElementById('usernameInput');
+const password_type = document.getElementById('passwordInput');
+const dd = document.getElementById('ageInput');
+const hh = document.getElementById('loginBtn');
+const resu = document.getElementById('loginResult');
+
+ 
+hh.addEventListener('click', function(){
+    const name_type = input_type.value;
+    const passwor = password_type.value;
+    const jj = dd.value;
+
+    if(name_type === "admin" && passwor === "1234"){
+        resu.textContent = 'Вітаємо, адміністратор!';
+
+    }else if(jj >= 13 &&  passwor !== "" && name_type !== "" ){
+        resu.textContent = 'Вхід успішний! ';
+    }else if(jj < 13){
+        resu.textContent = "Вам має бути 13+ років ";
+    }else if(passwor === '' && name_type === ''){
+        resu.textContent = 'Заповніть всі поля';
+    }else{
+        resu.textContent = 'Невірні дані';
+    }
+});
