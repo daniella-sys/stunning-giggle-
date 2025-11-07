@@ -1,0 +1,202 @@
+const { flushSync } = require("react-dom");
+
+//Знайди кнопку і блок для результатів
+const button = document.getElementById('showNumbersBtn');
+const result = document.getElementById('numbersResult');
+//При кліку на кнопку: Використай for цикл
+
+//Створи рядок з числами від 1 до 5
+
+//Виведи цей рядок у блок
+
+const gg = document.getElementById('createUsersBtn');
+const ll = document.getElementById('usersList');
+
+gg.addEventListener('click', function(){
+    for(let i = 1; i <= 6; i++){
+        const addElement = document.createElement('div');
+        addElement.textContent = "Користувач " +i;
+        if(i = 1){
+            addElement.classList.add('admin');
+        }else{
+            addElement.classList.add('user-card');
+        }
+        ll.appendChild(addElement);
+    }
+});
+
+const lo = document.getElementById('createCalendarBtn');
+const nn = document.getElementById('calendar');
+
+lo.addEventListener('click', function(){
+for( let i = 1; i <= 7; i++){
+const sevenElements = document.createElement('div');
+sevenElements.textContent = "День "+i;
+if(i >= 6) { // ← Вихідні (6, 7)
+            sevenElements.classList.add('weekend');
+        } else { // ← Будні (1-5)
+            sevenElements.classList.add('weekday');
+        }
+        
+}
+});
+
+const generalcalendar = document.getElementById('generateCalendarBtn');
+const oo = document.getElementById('calendarContainer');
+const resu = document.getElementById('electedDay');
+generalcalendar.addEventListener('click', function(){
+for(let i = 1; i <= 7; i++){
+    const day = document.createElement('div');
+    if(i >= 5){
+        day.classList.add('weekend');
+
+    }else if(i === 3){
+        day.classList.createElement('has-event');
+    }else if(i === 1){
+        day.classList.createElement('today');
+    }
+// Додаємо обробник кліку на кожен день
+        day.addEventListener('click', function() {
+            resu.textContent = 'Ви обрали день ' + i;
+        });
+        
+        oo.appendChild(day);
+}
+});
+
+const jj = document.getElementById('generateStarsBtn');
+const ss = document.getElementById('starsContainer');
+const mm = document.getElementById('ratingResult');
+jj.addEventListener('click', function(){
+for(let i = 1; i <= 5; i++){
+    const element = document.createElement('span');
+    element.textContent = '⭐';
+    element.addEventListener('click', function() {
+            mm.textContent = 'Ваша оцінка: ' + i + '/5';
+        });
+        
+        ss.appendChild(element); // ← Додаємо до контейнера
+
+}
+});
+
+const xx = document.getElementById('showProductsBtn');
+const qq = document.getElementById('productsList');
+xx.addEventListener('click', function(){
+for(let i = 1; i <= 6; i++){
+    const products = document.createElement('div');
+    products.textContent = "Продукт X";
+    if(i === 3){
+        products.classList.add('discount');
+    }else if(i === 5){
+         products.classList.add('discount');
+    }
+    qq.appendChild(products);
+}
+});
+
+const ppdsjbfjh = document.getElementById('createDaysBtn');
+const ww = document.getElementById('daysContainer');
+const ff = document.getElementById('selectedDay');
+const klkl = document.createElement('div');
+    for(let i = 1; i <= 7; i++){
+if(i === 1){
+klkl.textContent = "Понеділок";
+}else if(i === 2){
+    klkl.textContent = "Вівторок";
+}else if(i === 3){
+    klkl.textContent = "Середа";
+}else if(i === 4){
+    klkl.textContent = "Четвер";
+}else if(i === 5){
+    klkl.textContent = "П'ятниця";
+}else if(i === 6){
+    klkl.textContent = "Субота";
+}else if(i === 7){
+    klkl.textContent = "Неділя";
+}
+ppdsjbfjh.addEventListener('click', function(){
+klkl.textContent = 'Ви обрали день' +i;
+
+});
+
+    }
+
+
+const uhfjg = document.getElementById('createTasksBtn');
+const vjkvjk = document.getElementById('tasksList');
+for(let i = 1; i <= 5; i++){
+    const fdsfdgf = document.createElement('div');
+    fdsfdgf.textContent = 'Завдання'+i;
+    if(i === 2){
+        fdsfdgf.classList.add('completed');
+    }else if(i === 4){
+        fdsfdgf.classList.add('completed');
+
+    }
+    uhfjg.addEventListener('click', function(){
+        fdsfdgf.classList.add('completed');
+        vjkvjk.appendChild(fdsfdgf);
+    });
+}
+
+const cdsh = document.getElementById('showStudentsBtn');
+const aa = document.getElementById('studentsList');
+//Завдання:
+
+//Створи 6 учнів (цикл 1-6)
+
+//Текст: "Учень X"
+
+//ЯКЩО оцінка = 12 → "Відмінник" (клас excellent)
+
+//ЯКЩО оцінка = 10 або 11 → "Хорошист" (клас good)
+
+//ІНАКШЕ → "Успішний" (клас satisfactory)
+for(let i = 1; i <= 6; i++){
+    const fjjjh = document.createElement('div');
+    fjjjh.textContent = 'Учень X';
+if(i === 12){
+    fjjjh.textContent = "Відмінник";
+    fjjjh.classList.add('excellent');
+}else if(i === 10){
+    fjjjh.textContent = "Хорошист";
+    fjjjh.classList.add('good');
+}else if(i === 11){
+    fjjjh.textContent = "Хорошист";
+    fjjjh.classList.add('good');
+}else{
+    fjjjh.textContent = "Успішний";
+    fjjjh.classList.add('satisfactory');
+
+}
+aa.appendChild(fjjjh);
+}
+//id  <button id="createGalleryBtn">Створити галерею</button>
+ //   <div id="galleryContainer"></div>
+ //завдання Створи красиву галерею для знімка екрана:
+
+//При кліку на кнопку створи 9 карток зображень (цикл 1-9)
+
+//Кожна картка має текст: "Зображення X"
+
+//ЯКЩО номер = 3, 6, 9 → додай клас "featured" (виділені)
+//вивести інформацію
+const njjhj = document.getElementById('createGalleryBtn');
+const hdhjd = document.getElementById('galleryContainer');
+njjhj.addEventListener('click', function(){
+for(let i =1; i <= 9;i++){
+    const rdrd = document.createElement('div');
+    rdrd.textContent = 'Зображення Х';
+    if(i === 3){
+        rdrd.classList.add('featured');
+
+    }else if(i === 6){
+        rdrd.classList.add('featured');
+    }else if(i === 9){
+        rdrd.classList.add('featured');
+    }
+    hdhjd.appendChild(rdrd);
+}
+});
+//все
