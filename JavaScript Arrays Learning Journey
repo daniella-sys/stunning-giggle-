@@ -1,0 +1,101 @@
+/створення масивів 
+let question = [1, 2, 3, 4, 5];
+//виведення кількості завданнь
+console.log(question.length);
+//виведення конкретного елемента 
+console.log(question[0]);
+console.log(question[4]);
+//додати нове завдання в кінець
+question.push("Nothing");
+console.log(question);
+
+let products = ["Milk", "lemon", "coca-cola"];
+let prices = [12, 6, 22];
+for(let i = 0; i === products & prices; i++) {
+    console.log(i);
+}
+let maxPrice = prices[0];
+for(let i = 0; i < prices.length; i++){
+    if(prices[i] > maxPrice){
+        maxPrice = prices[i];
+    }
+}
+console.log("Text:" + maxPrice);
+
+let total = 0;
+for(let i = 0; i < prices.length; i++){
+    total = total + prices[i];
+}
+console.log("Text" + total);
+
+//new
+let friends = ["sue", "kate", "Anton"];
+console.log(friends);
+//порахувати скільки всього друзів 
+console.log(friends.length);
+//додати одного другі до списка
+friends.push("New friend");
+//виведення оновленого списку 
+console.log(friends);
+
+//new 
+let grade = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+let підрахування = 0;
+for(let i = 0; i < grade.length; i++){
+    підрахування = підрахування + grade[i] /12;
+
+}
+console.log("text:" + підрахування);
+let maxGrade = 0;
+for(let i = 0; i < grade.length; i++){
+    if(grade[i] > maxGrade){
+        maxGrade = grade[i];
+    }
+}
+console.log("text:" + maxGrade);
+
+let minGrade = 0;
+for(let i = 0; i < grade.length; i++){
+    if(grade[i] < minGrade){
+minGrade = grade[i];
+    }
+}
+console.log('text:' + minGrade);
+
+grade.push("Нова оцінка");
+console.log(grade);
+
+
+//newwww
+let expenses = [100, 50, 200, 75, 300];
+let cума = 0;
+for(let i = 0; i < expenses.length; i++){
+    if(expenses[i] < cума){
+        cума = expenses[i];
+    }
+}
+console.log("text:" + cума);
+
+let maxExpenses = 0;
+for(let i = 0; i < expenses.length; i++){
+    if(expenses[i] < maxExpenses[i]){
+        maxExpenses[i] = expenses[i];
+    }
+}
+console.log("text:" + maxExpenses);
+
+let minExpenses = 0;
+for(let i = 0; i < expenses.length; i++){
+    if(expenses[i] < minExpenses[i]){
+        minExpenses = expenses;
+    }
+}
+console.log("text:" + minExpenses);
+let vutratu = 0;
+for(let i = 0; i < expenses.length; i++){
+    if(expenses[i] < vutratu[i]){
+        vutratu = vutratu + expenses[i];
+        vutratu = expenses[i] / 725;
+    }
+}
+expenses.push(150);
