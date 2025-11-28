@@ -1,0 +1,44 @@
+let products = ["Телефон", "Ноутбук", "Навушники", "Мишка"];
+let prices = [15000, 30000, 2500, 800];
+let quantities = [5, 3, 10, 15];
+let inCart = [0, 0, 0, 0];
+for(let i = 0; i < products.length; i++){
+    console.log(products[i] + "-" + prices[i] + "грн" + quantities[i]);
+
+}
+//знайти найдорожчий товар і вивести
+let maxproduct = prices[0];
+for(let i = 0; i < prices.length; i++){
+    if(prices[i] > maxproduct){
+        maxproduct = prices[i];
+    }
+}
+console.log("Ноутбук" + maxproduct);
+//найдешевший товар
+let minproduct = prices[0];
+for(let i = 0; i < prices.length; i++){
+    if(prices[i] < minproduct){
+        minproduct = prices[i];
+    }
+}
+console.log("Мишка" + minproduct);
+//загальна вартість 
+let suma = 0;
+for(let i = 0; i < prices.length; i++){
+    suma = suma + prices[i];
+}
+console.log("Загальна вартість:" + suma);
+//add product in cart
+inCart.push(0);
+inCart.push(1);
+inCart.push(2);
+inCart.push(3);
+console.log(inCart);
+//товар з найбільшою кількісю на складі 
+let maxqua = quantities[0];
+for(let i = 0; i < quantities.length; i++){
+    if(quantities[i] > maxqua){
+        maxqua = quantities[i];
+    }
+}
+console.log("Найбільша кількість:" + maxqua);
