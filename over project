@@ -1,0 +1,80 @@
+//заключний урок
+//createw a project
+let projects = ["Веб-сайт", "Мобільний додаток", "База даних", "Гра"];
+let durations = [30, 45, 20, 60];
+let statuses = ["В роботі", "Завершено", "В роботі", "Планування"];
+//
+for(let i = 0; i < projects.length; i++){
+   console.log("Проект" + projects(i + 1)+ ":" + durations(i + 1) + statuses(i + 1));
+    console.log(projects.length);
+    console.log(durations.length);
+    console.log(statuses.length);
+}
+
+let total = 0;
+for(let i = 0; i < durations.length; i++ ){
+    total = total + durations[i];
+ 
+}
+console.log("Загально:" + total);
+ 
+//порахую проекти замість 7 завдання
+let pro = 0;
+for(let i = 0; i < projects.length; i++){
+    pro = pro + projects[i];
+  
+}
+console.log("Оновленно:" + pro);
+
+
+
+console.log(projects, durations, statuses);
+//ВИВОДИМО ЗА ЦИКЛОМ
+
+let smart = ["Телефон", "Ноутбук", "Планшет", "Навушники"];
+let numbers = [15000, 30000, 12000, 2500];
+let numberrr = [10, 5, 8, 15];
+for(let i = 0; i < smart.length; i++){
+    console.log(smart[i]+ ":" + numbers[i] * 10);
+}
+let maxsmart = numbers[0];
+for(let i = 0; i < numbers.length; i++){
+    if(numbers[i] > maxsmart){
+        maxsmart = numbers[i];
+    }
+}
+console.log("Text"+ maxsmart);
+let suma = 0;
+for(let i = 0; i < numbers.length; i++){
+    suma = suma + numbers[i];
+}
+console.log("ЗАгально:" + suma);
+
+let products = ["Монітор", "Клавіатура", "Мишка", "Колонки"];
+let prices = [5000, 800, 350, 1200];
+let quantities = [3, 7, 10, 4];
+for(let i = 0; i < products.length; i++){
+    console.log(products[i] + prices[i] + quantities[i]);
+
+}
+let maxprice = prices[0];
+for(let i = 0; i < prices.length; i++){
+    if(prices[i] > maxprice){
+        maxprice = prices[i];
+    }
+
+}
+console.log("Найдорожче" + maxprice + products[i]);
+//загальна вартість
+let summmaaaa = 0;
+for(let i = 0; i < prices.length; i++){
+    summmaaaa = summmaaaa + (prices[i] * quantities[i]);
+}
+console.log("Загальна ціна:" + summmaaaa);
+//знайти товар з найбільшою кількістю
+let stillquantities = quantities[0];
+for(let i = 0; i < quantities.length; i++){
+    if(quantities[i] > stillquantities){
+        stillquantities = quantities[i];
+    }
+}
