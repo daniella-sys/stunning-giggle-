@@ -1,0 +1,33 @@
+let products = ["Яблука", "Молоко", "Хліб", "Сир"];
+let prices = [25, 32, 18, 120];
+let cart = [0, 0, 0, 0]; // кількість у кошику
+for(let i = 0; i < products.length; i++){
+    console.log("product:" + products[i] + "prices:" + prices[i] + "cart:" + cart[i]);
+}
+//додати товар
+cart.push("Товар");
+//вивести товар
+console.log(cart);
+//загальна сума
+let summa = 0;
+for(let i = 0; i < prices.length; i++){
+    summa = summa + prices[i];
+}
+console.log("Загальна сума:" + summa);
+//знайти найдорожчий товар
+let maxprices = prices[0];
+for(let i = 0; i < prices.length; i++){
+    if(prices[i] > maxprices){
+        maxprices = prices[i];
+    }
+}
+
+console.log(maxprices);
+//найдешевший
+let minprices = prices[0];
+for(let i = 0; i < prices.length; i++){
+    if(prices[i] < minprices){
+        minprices = prices[i];
+    }
+}
+console.log("Мінімальна ціна:" + minprices);
