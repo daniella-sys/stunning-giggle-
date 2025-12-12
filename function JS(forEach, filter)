@@ -1,0 +1,95 @@
+
+ //створення функції forEach
+ number =  [1, 2, 3, 4, 5];
+ //функція
+ number.forEach(element => {
+    console.log(element + "Text");
+ });
+
+ //
+let numberrrr = [5, 10, 15];
+ numberrrr.forEach(element => {
+console.log(element + "Text");
+ });
+
+ //
+ let color = ['червоний', 'зелений', 'синій'];
+ color.forEach(element => {
+console.log(element + "Text");
+ });
+ //
+ let animals = ['кіт', 'собака', 'хомʼяк'];
+ animals.forEach( element => {
+console.log(element + "text");
+ });
+
+ //
+ let gg = ['піца', 'суши', 'морозиво'];
+ gg.forEach(element => {
+console.log(element + "text");
+ });
+
+
+ //1
+ let kk = ['кава', 'чай', 'сік'];
+ kk.forEach((element, index) => {
+    let resul = index + 1;
+    console.log(resul + ":" + element + "Напій");
+ });
+
+ //2
+ let ff = [10, 20, 30];
+ ff.forEach((element, index) => {
+    let results = element * 3;
+    console.log(results + "Text" + index);
+ });
+ //3
+ let aa = [100, 50, 25];
+aa.forEach((element, index) => {
+    let resultss = element / 5;
+    console.log(resultss + "text" + index);
+});
+
+
+let product =   ['хліб', 'молоко', 'яйця'];
+product.forEach((element, index) => {
+    let hh = index + 1;
+    console.log(hh + ":" + element + "Product");
+});
+
+let aqq =  [15, 25, 35];
+aqq.forEach((element, index) => {
+    let nn = element * 3;
+    console.log(nn + "text" + index );
+});
+
+let oo =  [200, 150, 100];
+oo.forEach((element, index) => {
+    let wjkh = element / 5;
+    console.log(wjkh + "text" + index);
+});
+
+//ФУНКЦІЯ fILTER 
+const fae = [10, 20, 30, 40, 50];
+const бiльше25 = fae.filter(num => num > 25);
+console.log(бiльше25);
+
+const len = ['яблуко', 'банан', 'апельсин', 'вишня'];
+const бiльшадовжина5 = len.filter(num => num.length > 5);
+console.log(бiльшадовжина5);
+
+const lie = [true, false, true, false, true];
+const тшлькизправдивимзначенням = lie.filter( num => num === true);
+console.log(тшлькизправдивимзначенням);
+
+const ko = [3, 7, 12, 8, 15];
+const числабальшшза10 = ko.filter( num => num > 10);
+console.log(числабальшшза10);
+
+const hf = [5, 10, 15, 20, 25];
+const крімпершого =  hf.filter((num, index) => index !== 0);
+console.log(крімпершого);
+
+const children = [17, 21, 15, 19, 22];
+const бильше18 = children.filter(num => num >= 18);
+console.log(бильше18);
