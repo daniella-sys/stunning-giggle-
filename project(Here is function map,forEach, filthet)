@@ -1,0 +1,148 @@
+const товари = [
+  { 
+    id: 1, 
+    назва: 'iPhone 14', 
+    категорія: 'смартфони', 
+    ціна: 29999, 
+    вНаявності: true, 
+    рейтинг: 4.7,
+    популярний: true,
+    теги: ['apple', 'преміум', 'новий']
+  },
+  { 
+    id: 2, 
+    назва: 'Samsung Galaxy', 
+    категорія: 'смартфони', 
+    ціна: 19999, 
+    вНаявності: false, 
+    рейтинг: 4.5,
+    популярний: true,
+    теги: ['android', 'камера']
+  },
+  { 
+    id: 3, 
+    назва: 'Навушники Sony', 
+    категорія: 'аудіо', 
+    ціна: 3499, 
+    вНаявності: true, 
+    рейтинг: 4.3,
+    популярний: false,
+    теги: ['бездротові', 'шумозаглушення']
+  },
+  { 
+    id: 4, 
+    назва: 'Ноутбук Lenovo', 
+    категорія: 'ноутбуки', 
+    ціна: 24999, 
+    вНаявності: true, 
+    рейтинг: 4.6,
+    популярний: true,
+    теги: ['робота', 'ігри', 'потужний']
+  },
+  { 
+    id: 5, 
+    назва: 'Планшет iPad', 
+    категорія: 'планшети', 
+    ціна: 18999, 
+    вНаявності: true, 
+    рейтинг: 4.8,
+    популярний: true,
+    теги: ['apple', 'малювання', 'легкий']
+  }
+];
+
+//ЧАСТИНА 1: ФІЛЬТРАЦІЯ (filter)
+//Товари в наявності (для головної сторінки)
+
+//Товари певної категорії (смартфони/ноутбуки тощо)
+
+//Товари в певному ціновому діапазоні (до 20000 грн)
+
+//Популярні товари (рейтинг > 4.5 та популярний: true)
+function vnauavnosti(element){
+  return element.вНаявності;
+};
+const djjdkj = товари.filter(vnauavnosti);
+console.log(djjdkj);
+
+function category(element){
+  return element.категорія;
+};
+const fjkjkfd = товари.filter(category);
+console.log(fjkjkfd);
+
+function diapazone(element){
+  return element.ціна < 20000;
+};
+const okokok = товари.filter(diapazone);
+console.log(okokok);
+
+//ЧАСТИНА 2: ТРАНСФОРМАЦІЯ (map)
+//Форматований список товарів (Назва - Ціна грн)
+
+//Товари зі знижкою (ціна -20% для акції)
+
+//Лише назви товарів (для швидкого перегляду)
+function spicok(element){
+  return element.назва && "-" && element.ціна;
+};
+const uhfd = товари.map(spicok);
+console.log(uhfd);
+
+function acchia(element){
+  return element.назва;
+};
+const qwsd = товари.map(acchia);
+console.log(qwsd);
+
+//ЧАСТИНА 3: ВИВОД ТА АНАЛІТИКА (forEach)
+//Вивести всі товари з деталями
+
+//Порахувати загальну вартість всіх товарів
+
+//Знайти найдорожчий/найдешевший товар
+товари.forEach((element, index) => {
+  let номеер = index + 1;
+console.log(element + номеер);
+});
+let max = товари[0].ціна;
+for(let i = 1; i < товари.ціна.length; i++){
+  if(ціна[i] > max){
+    max = товари.ціна[i];
+  }
+}
+
+
+let найдорожчий = товари[0];
+for(let i = 1; i < товари.length; i++){  
+  if(товари[i].ціна > найдорожчий.ціна){  
+    найдорожчий = товари[i];
+  }
+}
+console.log("Найдорожчий товар:", найдорожчий.назва);
+
+
+//ЧАСТИНА 4: ПОШУК (комбінації)
+//Пошук за тегом (наприклад, 'apple')
+
+//Товари з високим рейтингом в наявності
+
+//Товари категорії 'смартфони' дешевші 25000
+function hddhdh(element){
+  return element.теги.includes('apple')
+// Правильно: element.теги.includes('apple')
+};
+const rfhhfdh = товари.filter(hddhdh);
+console.log(rfhhfdh);
+
+function ehfhfhf(element){
+  return element.рейтинг > 4.3 && element.вНаявності === true;
+};
+const uiefuifuiff = товари.filter(ehfhfhf);
+console.log(uiefuifuiff);
+
+function ffjfdjk(element){
+  return element.категорія === "смартфони" && element.ціна < 25000;
+};
+const hdfhjdfhj = товари.filter(ffjfdjk);
+console.log(hdfhjdfhj);
