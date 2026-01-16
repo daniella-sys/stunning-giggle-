@@ -1,0 +1,148 @@
+const grades = [85, 90, 78, 92, 88];
+// Знайди середнє арифметичне через ОДИН reduce
+// Підказка: зберігай у accumulator об'єкт {sum: ..., count: ...}
+// Результат: 86.6
+const jedjj = grades.reduce(function(accumulator, index){
+return accumulator + index;
+}, 0);
+const ldkljd = jedjj / grades.length;
+console.log(ldkljd);
+
+const n = [10, 3, 15, 7, 20, 8];
+const dehbhd = n.reduce(function(accumulator, index){
+if( index % 5 === 0){   //подільність
+  return accumulator + index;
+}else{
+  return accumulator;
+}
+}, 0);
+
+const arr1 = ["кіт", "слон", "риба"];
+const arr2 = ["я", "кіт", "собака"];
+//Чи всі слова мають довжину > 2?
+const lklop = arr1.reduce(function(accumulator, index){
+if(index.length > 2){
+  return true;
+}else{
+  return false;
+}
+}, true);
+//Чи є хоча б одне число, що закінчується на 0?
+const numbersjjj = [15, 23, 40, 17, 8];
+// Результат: true (40 закінчується на 0)
+// Підказка: число закінчується на 0 → num % 10 === 0
+const qqq = numbersjjj.reduce(function(accumulator, index){
+if(index  % 10 === 0){
+  return true;
+}else{
+  return false;
+}
+}, true);
+
+const n9 = [10, 20, 30, 40, 50];
+// Спочатку знайди середнє
+// Потім порахуй, скільки чисел > 30
+// Результат: 2 (40, 50)
+const hhhghh = n9.reduce(function(accumulator, index){
+  return accumulator + index;
+
+});
+const dadss = hhhghh / n9.length;
+console.log(dadss);
+
+const numbersghhghgggggggggggggggg = [12, 34, 5, 78, 9];
+// Перші цифри: 1, 3, 5, 7, 9
+// Сума: 25
+// Підказка: перша цифра = Math.floor(num / 10) для двоцифрових
+const jhdhjdhdhhjhj = numbersghhghgggggggggggggggg.reduce(function(accumulator, index){
+return Math.floor(index / 10);
+});
+const qhqdhh = jhdhjdhdhhjhj + accumulator;
+const data8 = [2, 3, 4, 5, 6, 7];
+// Непарні: 3, 5, 7
+// Добуток: 3×5×7 = 105
+const qqmmm = data8.reduce(function(accumulator, index){
+  if(index % 2 !== 0){
+    return accumulator * index;
+  }else{
+    return accumulator;
+  }
+}, 1);
+
+//Скільки чисел парних?
+const constanta = [3, 8, 12, 5, 9, 14] 
+const bla = constanta.reduce(function(accumulator, index){
+  if(index % 2 === 0){
+    return true;
+  }else{
+    return false;
+  }
+}, true);
+console.log(bla);
+
+const students = [
+  { name: "Анна", grade: 85 },
+  { name: "Богдана", grade: 92 },
+  { name: "Катя", grade: 78 },
+  { name: "Дмитро", grade: 95 },
+  { name: "Олена", grade: 88 }
+];
+
+// Знайди: 
+// 1. Загальну суму балів
+// 2. Кількість студентів з балом > 90
+// 3. Найвищий бал
+// 4. Середній бал
+
+// Всі 4 пункти через ОДИН reduce!
+
+const sho = students.reduce(function(accumulator, index){
+  return accumulator + index.grade;
+  if(index.grade > 90){
+    return accumulator + 1;
+  }else{
+    return accumulator;
+  }
+  
+}, 0);
+const MaxGrade = students.reduce(getMax);
+function getMax(accumulator, index){
+  return Math.max(accumulator, index);
+}
+console.log(MaxGrade);
+
+const averageGrade = sho / students.length;
+console.log(averageGrade);
+
+const n87787= [1, 2, 3, 4, 5];
+
+// Завдання: 
+// 1. Сума парних чисел
+// 2. Кількість непарних
+// 3. Чи всі числа > 0?
+
+// Один reduce, об'єкт-результат
+const jhjhjpppnbb = n87787.reduce(function(accumulator, index){
+  if(index % 2 === 0){
+    return accumulator + index;
+  }
+}, 0);
+console.log(jhjhjpppnbb);
+
+const notlize = n87787.reduce(function(accumulator, index){
+  if( index % 2 !== 0){
+    return accumulator + 1;
+  }else{
+    return accumulator;
+  }
+}, 0);
+console.log(notlize);
+
+const ghhg = n87787.reduce(function(accumulator, index){
+  if(index > 0){
+    return true
+  }else{
+    return false;
+  }
+}, true);
+console.log(ghhg);
