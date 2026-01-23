@@ -1,0 +1,73 @@
+let price = 9.99;
+// Округли до цілого числа
+console.log(Math.round(price));
+
+// Підказка: Math.random() * 10 щоб рандомне число від 0-10
+let x = 10;
+console.log(Math.random() * 10);
+
+let radius = 5;
+// Площа = π × r²
+console.log(Math.PI * radius * radius);
+
+let num1 = [10, 20, 30];
+// Знайди середнє арифметичне
+const average = num1.reduce(function(accumulator, element){
+return accumulator + element;
+}, 0);
+const ghh = average / num1.length;
+console.log(ghh);
+
+let temp = -5;
+// Зроби додатнім
+console.log(Math.abs(temp));
+
+const arr1 = [7, 2, 9, 4, 1];
+// Знайди найбільше число (використай ...)
+console.log(Math.max(...arr1));
+
+const arr2 = [10, -5, 3, 8, -2];
+// Знайди найменше число
+console.log(Math.min(...arr2));
+
+const scores = [85, 92, 78, 95, 88];
+// Знайди найвищий бал
+console.log(Math.max(...scores));
+
+const num = 12;
+// Перевір, чи парне число
+// НЕ використовуй return, створ змінну
+const kk = num % 2 === 0;
+console.log(kk);
+
+const age = 17;
+// Перевір, чи повнолітня (>= 18)
+// Результат збережи в змінній isAdult
+if(age >= 18){
+    console.log(false);
+}else{
+    console.log(true);
+};
+const isAdult = false;
+
+const temperature = 25;
+// Чи гаряче? (> 20)
+// Збережи результат в змінній
+if(temperature > 20){
+    console.log('hot');
+}else{
+    console.log('холодно');
+};
+const hhjhj = 'hot';
+
+const hours = 3;
+const rate = 50; // грн/год
+// Знайди зарплату
+// Використай СВОЇ змінні
+const oppop = hours * rate;
+
+const length = 10;
+const width = 5;
+// Знайди площу прямокутника
+// Не пиши 10*5, використай змінні
+const ploza = length * width;
