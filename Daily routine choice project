@@ -1,0 +1,53 @@
+// 1. МАСИВИ ДАНИХ
+const dailyNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const motivations = [
+    "Ти можеш більше, ніж думаєш!",
+    "Крок за кроком -  досягнеш мети!",
+    "Сьогодні чудовий день для початку!",
+    "Не бійся помилятися - це частина навчання!",
+    "Ти на правильному шляху!"
+];
+const tasks = [
+    "Вивчи 3 нових слова англійською",
+    "Зроби зарядку 10 хвилин",
+    "Прочитай 10 сторінок книги",
+    "Напиши код 30 хвилин",
+    "Подзвони другові"
+];
+const goals = [
+    "Стати кращим програмістом",
+    "Вивчити JavaScript",
+    "Покращити здоров'я",
+    "Знайти нових друзів",
+    "Подорожувати більше"
+];
+
+// 2. випадкове число дня 
+function getrandomday(){
+    const hfhfjh = Math.floor(Math.random() * dailyNumbers.length);
+    return dailyNumbers[hfhfjh];
+}
+function getrandommotaivation(){
+    const qwwpo = Math.floor(Math.random()* motivations.length);
+    return motivations[qwwpo];
+}
+function getrandomtask(){
+    const kkk = Math.floor(Math.random() * tasks.length);
+    return tasks[kkk];
+}
+function getrandomgo(){
+    const go = Math.floor(Math.random()*goals.length);
+    return goals[go];
+}
+
+//виклик
+const one_daile = getrandomday();
+const one_m = getrandommotaivation();
+const one_t = getrandomtask();
+const one_g = getrandomgo();
+
+//вивід
+console.log("Перший день:", one_daile);
+console.log("Перша мотиваційна фраза:", one_m);
+console.log("перше завдання:", one_t);
+console.loh("Перша ціль:", one_g);
