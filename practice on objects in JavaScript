@@ -1,0 +1,132 @@
+//практика завдання найпростіші
+const animals = {
+    type: "cat",
+    name: "Myrchuk",
+    age: 3,
+    color: "grey",
+}
+console.log(animals);
+//якщо окремо
+console.log(animals.type);
+console.log(animal.name);
+console.log(animals.age);
+console.log(animal.color);
+
+const fruit = {
+    name: "apple",
+    color: "red",
+    weight: 150,
+}
+console.log("It:" + fruit.name + "," + fruit.color);
+console.log(fruit.weight / 1000);
+//ще масив 
+const book = {
+    title: "Гаррі Поттер",
+    author: "Роулінг",
+    pages: 320,
+    year: 1997,
+}
+console.log(book.title);
+console.log(book.author);
+console.log(book);
+//
+const circle = {
+    radius: 5,
+    
+}
+diametr = book.radius * 2;
+console.log(circle.radius + diametr);
+
+//практика над завданнями там де допустила помилку
+
+const rectangle = {
+    width: 10,
+    height: 5,
+};
+area = rectangle.width * rectangle.height;
+console.log(area);
+
+
+const product = {
+    price: 1000,
+    discount: 0.2,
+};
+finalPrice = product.price * (1 - product.discount);
+
+const travel = {
+    distance: 300,
+    speed: 80,
+    
+};
+time = travel.distance / travel.speed;
+console.log(time);
+
+//важчі завдання
+const calculator = {
+    add: function(){console.log(a + b)},
+    //// ❌ НЕПРАВИЛЬНО:
+//       add: function() { console.log(a + b) }
+
+// ✅ ПРАВИЛЬНО:
+//add: function(a, b) { console.log(a + b) }
+// ↑↑↑ a та b тепер є параметрами функції
+    subtract: function(){console.log(a - b)},
+    multiply: function(){console.log(a * b)},
+    divide: function(){console.log(a / b)},
+    lastResult: calculator.divide,
+    
+}
+
+
+//завдання
+const simpleCalculator = {
+    add: function(x, y){console.log(x + y)},
+    subtract: function(x, y){console.log(x - y)},
+    multiply: function(x, y){console.log(x * y)},
+    divide: function(x, y){
+        if(y === 0){
+            console.log("Не можна ділити на нуль!");
+        }else{
+            console.log(x / y);
+        }
+    }
+
+}
+//перевірка або підставка чисел
+simpleCalculator.add(11, 11);
+simpleCalculator.subtract(20, 7);
+simpleCalculator.multiply(25, 5);
+simpleCalculator.divide(9, 0);
+simpleCalculator.divide(12, 4);
+
+
+
+const unitConverter = {
+    metersToKm: function(a){console.log(a / 1000)},
+    kgToGrams: function(a){console.log( a * 1000)},
+    hoursToMinutes: function(a){console.log(a * 60)},
+    celsiusToFahrenheit: function(a){
+        if(a < -273.15){
+            console.log("Неможлива температура");
+        }else{
+            console.log((a * 9/5) + 32);
+        }
+}
+}
+unitConverter.metersToKm(10000);
+unitConverter.celsiusToFahrenheit(-500);
+unitConverter.hoursToMinutes(2);
+unitConverter.kgToGrams(500);
+
+const counter = {
+    increment: function(x){console.log(x + 1)},
+    decrement: function(x){console.log(x - 1)},
+    getValue: function(x){console.log(x)},
+    reset: function(x){console.log(x * 0)},
+}
+counter.increment(6);
+counter.decrement(89);
+counter.getValue(207);
+counter.reset(10006);
+
+//кінець практики 
