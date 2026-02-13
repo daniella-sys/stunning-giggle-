@@ -1,0 +1,28 @@
+Що таке метод?
+Метод - це функція всередині об'єкта, яка щось робить.
+
+showAll() - це метод, який ПОКАЗУЄ ВСІХ
+
+const group = {
+    students: [
+        { name: "Олена", grade: 85 },
+        { name: "Іван", grade: 92 },
+        { name: "Марія", grade: 78 }
+    ],
+    
+    // ЦЕ МЕТОД showAll (він просто виводить список) //всередині об'єкта.
+    showAll: function() {
+        console.log("1. " + this.students[0].name + " - " + this.students[0].grade);
+        console.log("2. " + this.students[1].name + " - " + this.students[1].grade);
+        console.log("3. " + this.students[2].name + " - " + this.students[2].grade);
+    }
+};
+
+// Як викликати:
+group.showAll(); //аналогічно і з іншими
+
+this.students[0].name - перший студент, ім'я
+
+this.students[0].grade - перший студент, оцінка
+
+this.students[1].name - другий студент, ім'я 
