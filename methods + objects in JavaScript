@@ -1,0 +1,243 @@
+
+//НОВА ЧАСТИНА
+
+const smartphone = {
+    brand: "Samsung",
+    model: "Galaxy S21",
+    price: 15000,
+    isOn: false,
+    battery: 50,
+
+   powerOn: function(){
+    this.isOn = true;
+    console.log(" Смартфон увімкнено");
+   },
+   powerOff: function(){
+    this.isOn = false, 
+    console.log("смартфон вимкнено");
+   },
+   showStatus: function(){
+    console.log(this.brand + "-" + this.model + "-" + this.price + "-" + this.isOn + "-" + this.battery);
+   },
+   chargeBattery: function() {
+        this.battery = this.battery + 10;
+        if (this.battery > 100) {
+            this.battery = 100;
+        }
+   },
+
+   usePhone: function() {
+        if (this.isOn) {
+            this.battery = this.battery - 5;
+            if (this.battery < 0) {
+                this.battery = 0;
+            }
+            console.log(" Використано телефон. Залишок: " + this.battery + "%");
+        } else {
+            console.log(" Телефон вимкнено!");
+        }
+    }  //
+}; 
+smartphone.powerOn();
+smartphone.powerOff();
+smartphone.showStatus();
+smartphone.chargeBattery();
+smartphone.usePhone();
+
+
+const alarmClock = {
+    brand: "Samsung",
+    model: "SmartAlarm",
+    time: "07:00",
+    isOn: false,
+    volume: 50,
+    snoozeCount: 0,
+
+    turnOn: function() {
+        this.isOn = true;
+        console.log("Будильник включено");
+    },
+
+    turnOff: function(){
+        this.isOn = false;
+        console.log("Будильник вимкнено");
+    },
+    setTime: function(newTime){
+        this.time = newTime;
+        alarmClock.setTime("09:00");
+        console.log(this.time);
+    },
+    showInfo: function(){
+        console.log(this.brand + "-" + this.model + "-" + this.time + "-" + this.isOn + "-" + this.volume + "-" + this.snoozeCount);
+    },
+    volumeUp: function(){
+        this.volume = this.volume + 10;
+        if(this.volume > 100){
+            this.volume = 100;
+        }else{
+            console.log("Гучність:" + this.volume);
+        }
+    },
+    snooze: function(){
+        if(this.isOn === true){
+            this.snoozeCount = this.snoozeCount + 10;
+
+        }else{
+            this.snoozeCount = this.snoozeCount + 1;
+            console.log("Відкладено на 10 хв.");
+        }
+    }
+
+};
+//Тестінг
+alarmClock.turnOn();
+alarmClock.turnOff();
+alarmClock.setTime();
+alarmClock.showInfo();
+alarmClock.volumeUp();
+alarmClock.snooze();
+
+const smartSpeaker = {
+    brand: "Xiaomi",
+    model: "Mi Smart Speaker",
+    volume: 30,
+    isOn: false,
+    currentSong: "",
+    playlist: ["Song 1", "Song 2", "Song 3"],
+    currentTrackIndex: 0,
+
+   turnOn: function(){
+    this.isOn = true;
+    console.log("Колонка включена");
+   },
+
+   turnOff: function(){
+    this.isOn = false;
+    console.log("Колонка вимкнута");
+   },
+   volumeUp: function(){
+    this.volume = this.volume + 5;
+    if(this.volume > 100){
+        this.volume = 100;
+    }else{
+        console.log(this.volume + "%");
+    }
+   },
+   volumeDown: function(){
+    this.volume = this.volume - 5;
+    if(this.volume < 0){
+        this.volume = 0;
+    }else{
+        console.log(this.volume + "%");
+    }
+   },
+   play: function(){
+    if(this.isOn === false){
+        console.log("Колонку ввімкнути ");
+    }else{
+        this.currentSong = this.playlist[this.currentTrackIndex];
+        console.log("?");
+    }
+   },
+   nextTrack: function(){
+    this.currentTrackIndex = this.currentTrackIndex + 1;
+    if(this.currentTrackIndex > length.playlist){
+        this.currentTrackIndex = 0;
+
+    }
+   },
+   prevTrack: function(){
+    this.currentTrackIndex = this.currentTrackIndex - 1;
+    if(this.currentTrackIndex < 0){
+        this.currentTrackIndex = playlist.length - 1;
+    }
+   },
+   showStatus: function(){
+    console.log(this.brand + "-" + this.model + "-" + this.volume + "-" + this.isOn + "-" + this.currentSong + "-" + this.playlist + "-" + this.currentTrackIndex);
+
+   },
+
+};
+//Testing 
+smartSpeaker.turnOn();
+smartSpeaker.turnOff();
+smartSpeaker.volumeUp();
+smartSpeaker.volumeDown();
+smartSpeaker.play();
+smartSpeaker.nextTrack();
+smartSpeaker.prevTrack();
+smartSpeaker.showStatus();
+
+
+const smartThermostat = {
+    brand: "Xiaomi",
+    model: "Smart Temp",
+    temperature: 22,
+    isOn: false,
+    mode: "auto", // "auto", "heat", "cool", "fan"
+    fanSpeed: 1, // 1, 2, 3
+    targetTemp: 22,
+
+    turnOn: function(){
+        this.isOn = true;
+        console.log("Включено");
+    },
+    turnOff: function(){
+        this.isOn = false;
+        console.log("Вимкнено");
+    },
+    setTargetTemp: function(temp){
+        this.targetTemp = temp;
+        smartThermostat.setTargetTemp(24);
+        console.log(this.targetTemp);
+    },
+    tempUp: function(){
+        this.targetTemp = this.targetTemp + 1;
+        console.log(this.targetTemp);
+        Maxtargettemp = Math.max(30);
+    },
+    tempDown: function(){
+        this.targetTemp = this.targetTemp - 1;
+        MintargetTemp = Math.min(15);
+        console.log(this.targetTemp);
+    },
+/// setMode: function(newMode){
+//?
+   // }
+fanSpeedUp: function(){
+    this.fanSpeed = this.fanSpeed + 1;
+    Maxspeed = Math.max(3);
+    console.log(this.fanSpeed);
+},
+fanSpeedDown: function(){
+    this.fanSpeed= this.fanSpeed - 1;
+    Minfanspeed = Math.min(1);
+    console.log(this.fanSpeed);
+},
+showStatus: function(){
+    console.log(this.brand + "-" + this.model + "-" + this.temperature + "-" + this.isOn + "-" + this.fanSpeed + '-' + this.targetTemp);
+
+},
+checkTemperature: function(){
+    if(this.isOn === false){
+        console.log("Термостат вимкнено");
+    }else if (this.temperature < this.targetTemp - 2) {
+console.log("Додати тепла");
+    }else if (this.temperature > this.targetTemp + 2) {
+        console.log("Включити охолодження");
+    }else if( this.targetTemp === 15){
+        console.log("Комфортно");
+    }
+},
+
+};
+//Testing 
+smartThermostat.turnOn();
+smartThermostat.turnOff();
+smartThermostat.setTargetTemp();
+smartThermostat.tempUp();
+smartThermostat.tempDown();
+smartThermostat.fanSpeedUp();
+smartThermostat.fanSpeedDown();
+smartThermostat.showStatus();
+smartThermostat.checkTemperature();
