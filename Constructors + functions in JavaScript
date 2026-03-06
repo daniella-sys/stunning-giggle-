@@ -1,0 +1,173 @@
+//Конструктори 
+function Book(title, author, year){
+this.title = title,
+this.author = author, 
+this.year = year
+}
+const book1 = new Book("1984", "Джордж Орвелл", 1949);
+const book2 = new Book("Майстер and Маргарита", "Михайло Булгаков", 1967);
+const book3 = new Book("Гордість and упередження", "Джейн Остін", 1813);
+//вивід
+console.log(book1);
+console.log(book2);
+console.log(book3);
+
+function Student(name, surname, gardes){
+this.name = name,
+this.surname = surname,
+this.gardes = gardes
+ this.calculateAverage = function() {
+        if (this.grades.length === 0) return 0; // перевірка на порожній масив
+        
+        let sum = 0; //для обчислення 
+        for (let i = 0; i < this.grades.length; i++) {
+            sum = sum + this.grades[i]; 
+        }
+        return sum / this.grades.length;
+    }
+}
+
+const student1 = new Student("Artem", "Zadira", [10, 12, 8, 9]);
+const student2 = new Student("Zoa", "Shevchenko", [7, 8, 10, 6]);
+const student3 = new Student("Bogdana", "Koval", [9, 10, 11, 12]);
+
+
+function Smartphone(brand, model,price){
+    this.brand = brand, 
+    this.model = model,
+    this.price = price
+    this.call = function(){
+        console.log("Дзвінок з ${this.brand} ${this.model}");
+    }
+
+}
+const jdj1= new Smartphone("Samsung", "s56", "galaxy");
+const hjdhj2 = new Smartphone("Iphone", "17", "mini");
+const nn3 = new Smartphone("Oppo", "C8", "max");
+
+console.log(jdj1);
+console.log(hjdhj2);
+console.log(nn3);
+
+ function Animal(species, name, sound){
+this.species = species,
+this.name = name,
+this.sound = sound
+this.makeSound = function(){
+    console.log(`${this.name} каже: ${sound}!`)
+}
+ }
+ const animal1 = new Animal("Рекс",	"собака", "	Woof woof!");
+ const animal2 = new Animal("Сніжок", "кіт",	"Мур-р-р");
+ const animal3 = new Animal("Мурчик",	"кіт",	"Мяу-мяу!");
+
+ console.log(animal1);
+ console.log(animal2);
+ console.log(animal3);
+
+ function Computer(brand, processor, ram, ssd ){
+this.brand = brand,
+this.processor = processor,
+this.ram = ram,
+this.ssd = ssd
+this.specs = function(){
+    console.log(`Комп'ютер ${brand}: ${processor}, RAM: ${ram}ГБ, SSD: ${ssd}ГБ`);
+
+}
+ }
+ const computer1 = new Computer("Apple", "M2" ,256);
+ const computer2 = new Computer("Apple", "M3", "Pro", 512);
+
+ console.log(computer1);
+ console.log(computer2);
+
+ function Clothing(type, size, color, price){
+this.type = type,
+this.size = size,
+this.color = color,
+this.price = price
+this.discount = function(percent) {
+    return this.price * (100 - percent) / 100;
+}
+ }
+ const clothes1 = new Clothing("Футболка",	"M",	"білий",	500);
+ const clothes2 = new Clothing("Футболка",	"L",	"чорний",	550);
+ console.log(clothes1);
+ console.log(clothes2);
+
+ function Restaurant(name, cuisine, dishes){
+this.name = name,
+this.cuisine = cuisine,
+this.dishes =  ["борщ", "вареники", "паста"];
+this.addDish(dish) = function(){
+this.dishes.push(dish); // додаємо страву в масив !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+this.showMenu = function(){
+    console.log(this.dishes);
+}
+ }
+const restorant1 = new Restaurant("Піцца",	"італійська	маргарита", "пепероні", "карбонара", "лазанья", "тірамісу");
+const restorant2 =new Restaurant("Суші Майстер",	"японська	філадельфія", "каліфорнія", "рамен", "удон", "місо суп");
+console.log(restorant1);
+console.log(restorant2);
+
+function Fruit(name,color, taste){
+this.name = name,
+this.color = color,
+this.taste = taste,
+this.describe = function(){
+   console.log( `${this.name} — ${this.color}, смак: ${this.taste}`);
+}
+
+}
+const fruit1 = new Fruit("банан", "жовтий", "смачний");
+const fruit2 = new Fruit("лимон", "жовтий", "кислий");
+const fruit3 = new Fruit("манго", "помаранчевий", "смачне");
+console.log(fruit1);
+console.log(fruit2);
+console.log(fruit3);
+
+function WeekDay(number_day, uaname, enname){
+this.number_day = number_day,
+this.uaname = uaname,
+this.enname = enname,
+this.isWeekend = function(){
+    if(number_day === 6){
+        return true;
+    }else if(number_day === 7){
+        return true;
+    }else{
+        return false;
+    }
+}
+}
+const weekday1= new WeekDay(2, "середа", "wensday");
+const weekday2 = new WeekDay(7, "Субота", "Saturday");
+
+console.log(weekday1);
+console.log(weekday2);
+
+function SocialUser(name, age, city, friendsCount){
+this.name = name,
+this.age = age,
+this.city = city,
+this.friendsCount = friendsCount,
+this.isPopular = function(){
+    if(this.friendsCount > 500){
+        console.log("суперпопулярний");
+    }else if(this.friendsCount < 100){
+        console.log("маловідомий");
+    }else{
+        console.log("маловідомий");
+    }
+    
+
+    }
+}
+const social1 = new SocialUser("Bob", 15, "Los-Angelos", 600);
+const social2 = new SocialUser("Leon", 17, "Los-Angelos", 200);
+const social3 = new SocialUser("Bogdana", 16, "Los-Angelos", 20);
+//вивід
+console.log(social1);
+console.log(social2);
+console.log(social3);
