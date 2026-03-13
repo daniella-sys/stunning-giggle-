@@ -1,0 +1,183 @@
+const subject = "English";
+let grade = 8;
+let isgood = true;
+const dream = 5767;
+
+const studentProgress = {
+    name: "English",
+    currentGrade: 10,
+    isPassed: true,
+    targetScore: 10,
+    greet: function(){
+        console.log(`Привіт, я вчу ${this.name}$!`)
+    }
+}
+//Щоб додати нове значення то поза об'єктом створюємо і оновлюємо теж
+studentProgress.currentGrade = 15; //оновили
+studentProgress.teacherName = "bob"; //додали нове значення
+console.log(studentProgress.currentGrade);
+console.log(studentProgress.teacherName);
+
+const nmtCalculator = {
+    subject: "Geography",
+    pointsPerTask: 5,
+    correctAnswers: 20,
+    calculateTotal: function(){
+        console.log(`За предмет ${this.subject}$ ти вже маєш ${this.pointsPerTask * this.correctAnswers}$балів`);
+    },
+    CheckStatus: function(){
+        if(this.pointsPerTask * this.correctAnswers >= 100 ){
+            console.log("Чудово - поріг");
+        }else{
+            console.log("Вивчи ще");
+        }
+    },
+}
+//masuv приклад його 
+const sclad = [
+    {
+        name: "Geography",
+        test: 18,
+        isRead: true,
+    },
+    {
+        name: "English",
+        test: 20,
+        isRead: false,
+    },
+    {
+        name: "chemistry",
+        test: 11,
+        chemistry: true,
+    },
+];
+for(const subject of sclad ){
+    if(subject.test >= 15){
+        console.log("Nice!")
+    }else{
+        console.log("Bad!");
+    }
+}
+//вивід
+console.log(nmtCalculator.correctAnswers);
+console.log(sclad[0].name); //прикад виводу 
+//виклик метода
+nmtCalculator.calculateTotal();
+nmtCalculator.CheckStatus();
+
+
+
+
+
+const Grade = {
+    subject: "History",
+    Correct_answers: 9,
+    test: 1,
+    calculator: function(){
+        console.log(`За предмет ${this.subject} отримали ${this.Correct_answers * this.test} балів`);
+    }
+
+}
+//Чим відрізняється return від console.log?
+
+
+
+
+const Music_App = {
+    title: "Lusic Dreams",
+    artist: "Juice WRLD",
+    duration: 4,
+    isPremium: true,
+    isPlay: function(){
+        console.log(`Play music ${this.title}`);
+    },
+    Duration: function(){
+        if(this.duration >= 5){
+            console.log("Long song");
+        }else{
+            console.log("fast song");
+        }
+    },
+}
+//масив з музики 
+const playlist = [
+    {
+        name: "I Smoked Away My Brain",
+        artist: "A$AP Rocky",
+        duration: 3,
+
+    },
+    {
+        name: "Swimming Pools",
+        artist: "KendRick Lamar",
+        duration: 4,
+    },
+];
+//
+for(const duration of playlist){
+    if(duration.duration <= 2){
+        console.log("fast");
+    }else{
+        console.log("long");
+    }
+}
+Music_App.isPremium = false; //оновлення значення
+Music_App.isReclama = true;
+//запуск метода
+Music_App.isPlay();
+//вивід
+console.log(playlist[0].name);
+console.log(playlist[0].artist);
+console.log(playlist[0].duration);
+
+
+const Libraly = {
+    book: "Проєкт «Аве Марія",
+    year: 2021,
+    author: "Енді Вейр",
+    isModern: false,
+    isREad: function(){
+        console.log(`Ви читаєте книгу ${this.book}`);
+    },
+    isYear: function(){
+      if(this.year >= 2021){
+        console.log("Modern");
+      }else{
+        console.log("old");
+      }
+    }
+
+}
+//масив 
+const Libraly_2 = [
+{
+    name: "Кульбабове вино",
+    year: 1957,
+    author: "Рей Бредбері",
+},
+{
+    name: "Там, де співають раки",
+    year: 2018,
+    author: "Делія Оуенс",
+},
+{
+    name: "Сад Гетсиманський",
+    year: 1950,
+    author: "Іван Багряний",
+},
+];
+for(const year of Libraly_2){
+    if(year.year >= 1920){
+        console.log("Modern");
+    }else{
+        console.log("old");
+    }
+};
+//вивід + додача/оновлення методів
+Libraly.isYear();
+Libraly.isREad();
+Libraly.isModern = true;
+Libraly.price = 2000;
+console.log(Libraly_2[2].name);
+console.log(Libraly_2[2].year);
+console.log(Libraly_2[2].author);
