@@ -1,0 +1,118 @@
+//Json файли
+const pizzaEntry = '{"name": "Margherita", "price": 250}';
+//Створила змінну 
+const parsedEntry = JSON.parse(pizzaEntry);
+//перетворюю на об'єкт
+console.log(parsedEntry);
+
+const user = {
+    "user": "nickname",
+    "level": 5
+
+}
+const userstr = JSON.stringify(user);
+console.log(userstr);
+
+const cat = [
+    {
+        name: "Tom", age: 3},
+        {name: "Hec", age:1}
+    
+];
+const catSTR = JSON.stringify(cat, null, 2);
+console.log(catSTR);
+
+const weatherJson = '{"city": "Kyiv", "temp": 20}';
+const weatherP = JSON.parse(weatherJson, null, 2);
+console.log(weatherP);
+
+const namesJson = '["Ivan", "Oleg"]';
+const namP = JSON.parse(namesJson);
+namP.push("Olena");
+console.log(namP);
+
+const phones = [
+    { model: "iPhone", price: 1000 },
+    { model:" Samsung", price: 800}
+];
+
+const phonesSTr = JSON.stringify(phones, null, 2);
+console.log(phonesSTr);
+
+const orderJson = '{"item": "Coffee", "count": 2}';
+const orderP = JSON.parse(orderJson);
+console.log(orderP);
+
+const citiesJson = '["Kyiv", "Lviv"]';
+const cityP = JSON.parse(citiesJson);
+const citiesArray = cityP;
+citiesArray.push("Mexico");
+console.log(citiesArray);
+
+
+const studentJson = '{"name": "Marta", "grade": 12, "subject": "Math"}';
+const studentP = JSON.parse(studentJson);
+console.log(studentP.name);
+console.log(studentP.grade);
+
+const pricesJson = '[100, 250, 500]';
+const priceP = JSON.parse(pricesJson);
+console.log(priceP[1]);
+
+const ordersJson = '[{"id": 101, "item": "Pizza"}, {"id": 102, "item": "Burger"}]';
+const orders = JSON.parse(ordersJson);
+console.log(orders[1]);
+console.log(orders[0].item);
+orders.push = {"id": 103, "item": "Cola"};
+const orderss = JSON.stringify(orders, null, 2);
+console.log(orderss);
+
+
+const booksJson = '[{"title": "Harry Potter"}, {"title": "The Hobbit"}]';
+//перетворимо на об'єкт щоб було легше працювати
+const book = JSON.parse(booksJson);
+console.log(book[1]);
+book.push = {"title": "1984"};
+const bookS = JSON.stringify(book);
+console.log(bookS);
+
+
+const shopJson = '[{"name": "Milk", "price": 30}, {"name": "Bread", "price": 20}]';
+const cart = JSON.parse(shopJson);
+console.log(cart[0].price);
+cart[1].price = 25;
+const cartS = JSON.stringify(cart);
+console.log(cartS);
+
+const users = [{"name": "Oleg"}, {"name": "Ivan"}];
+const usersS = JSON.stringify(users); //оскільки в нас тут немає лапок то це уже готовий масив уже об'єкти
+usersS.push({"name": "Anna"});
+const hjkhjh = JSON.stringify(usersS);
+console.log(hjkhjh);
+
+const dataJson = '[{"game": "CS:GO", "rank": 5}, {"game": "Dota 2", "rank": 3}]';
+//оскільки є лапки то->
+const datap = JSON.parse(dataJson);
+datap[0].rank = 10;
+datap.push({"game": "Valorant", "rank": 1});
+const datas = JSON.stringify(datap);
+console.log(datas);
+
+const playlist = [{"song": "Starboy", "artist": "The Weeknd"}];
+playlist[0].song = "Blinding Lights";
+console.log(playlist[0].song);
+const plas = JSON.stringify(playlist);
+console.log(plas);
+//Відпрацювання push();
+const fruits = [{"name": "Apple"}, {"name": "Banana"}];
+fruits.push({"name": "Orange"});
+const frs = JSON.stringify(fruits);
+console.log(frs);
+
+const toysJson = '[{"type": "Doll", "price": 100}, {"type": "Car", "price": 50}]';
+const toesP = JSON.parse(toysJson);
+toesP[0].price = 120;
+toesP[1].price = 120;
+toesP.push({"type": "Ball", "price": 30});
+const toeS = JSON.stringify(toesP);
+console.log(toeS);
