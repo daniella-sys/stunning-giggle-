@@ -1,0 +1,64 @@
+//project 
+const inputJson = '[{"id": 1, "name": "Marta", "course": "JS"}, {"id": 2, "name": "Oleg", "course": "Python"}]';
+//перетворюю на об'єкт
+const inputP = JSON.parse(inputJson);
+//зміна значеннь 
+inputP[1].course = 'JS';
+//додавання нового об`єкту
+inputP.push({"id": 3, "name": "Ivan", "course": "HTML"});
+//перетворення на рядок
+
+
+
+const inputS = JSON.stringify(inputP);
+
+console.log(inputS);
+
+
+//функція пошуку
+const playlist = [
+  { id: 1, title: "Starboy", artist: "The Weeknd" },
+  { id: 2, title: "Blinding Lights", artist: "The Weeknd" },
+  { id: 3, title: "Save Your Tears", artist: "The Weeknd" }
+];
+//cтворюємо фукцію
+const idd = playlist.find(id => id.id === 2);
+const foundSong = idd;
+console.log(foundSong);
+
+
+const products = [
+  { name: "Phone", price: 1000 },
+  { name: "Tablet", price: 500 }
+];
+const nam = products.find(name => name.name === "Tablet");
+nam.price = 250;
+const proS = JSON.stringify(products, null, 2);
+console.log(proS);
+
+
+const players = [
+  { id: 1, nickname: "Starlight", level: 10, online: true },
+  { id: 2, nickname: "DragonShadow", level: 42, online: false },
+  { id: 3, nickname: "Marta_JS", level: 1, online: true }
+];
+
+const playersFound = players.find(nickname => nickname.nickname === 'DragonShadow');
+playersFound.online = true;
+
+const found = players.find(nickname => nickname.nickname === "Marta_JS" );
+found.level = 5;
+const PLaS = JSON.stringify(players, null, 2);
+
+//
+const stock = [
+  { id: 101, name: "Laptop", price: 25000, count: 5 },
+  { id: 102, name: "Keyboard", price: 1200, count: 10 },
+  { id: 103, name: "Mouse", price: 600, count: 15 }
+];
+const stockFound = stock.find(name => name.name === "Keyboard");
+stockFound.count = 9;
+const jckjkc = stock.find(name => name.name === "Laptop");
+jckjkc.price = 27000;
+const stockS = JSON.stringify(stock, null, 2);
+console.log(stockS);
