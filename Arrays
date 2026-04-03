@@ -1,0 +1,109 @@
+//Arrays
+let prices = [45, 60, 35, 50];
+prices.forEach(function(element, index){
+  let num = index + 1;
+  console.log("товар:" + num + "price:" + element);
+});
+
+let myFruits = ["Apple", "Banana"];
+myFruits.push("coconut");
+console.log(myFruits);
+
+let winners = ["Oleh", "Ivan", "Marta"];
+winners.shift(); //без індексів нічого не потрібно
+console.log(winners);
+
+let team = ["Player1", "Player2", "Player3"];
+team[1] = "SuperStar";
+console.log(team);
+
+colors = ["Red", "Green", "Blue"];
+colors.pop();
+console.log(colors);
+
+numbers = [10, 20, 30, 40, 50];
+console.log(numbers.length);
+
+let gadgets = ["Phone", "Laptop", "Tablet"];
+console.log(gadgets.includes("Phone"));
+
+cities = ["Kyiv", "Lviv", "Odesa"];
+let index = cities.indexOf("Lviv");
+console.log(cities);
+
+letters = ["a", "b", "c", "d"];
+letters.sort().reverse();
+console.log(letters);
+
+let shop = ["Bread", "Milk", "Cheese"];
+shop.pop();
+//додати елемент на початок 
+shop.unshift("Chocolate");
+console.log(shop);
+
+myNumbers = [5, 12, 8, 20, 3];
+myNumbers.forEach(function(element, index){
+  if(element > 10){   //.length працює з рядками (текстом) або масивами. У чисел немає властивості "довжина"
+    console.log(element);
+  }else{
+    console.log();
+  }
+});
+
+blackList = ["hacker", "virus", "spam"];
+currentUser = "hacker";
+if(blackList.includes(currentUser)){
+  console.log("ДОСТУП ЗАБОРОНЕНО!");
+}else{
+  let ind = index + 1;
+  console.log("Ласкаво просимо");
+  
+};
+
+cart = ["Milk", "Bread"];
+cart.push("Coconut");
+cart.forEach(function(element, index){
+if(cart.length > 2){
+  console.log("Кошик заповнений!");
+}else{
+
+}
+});
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+numbers.forEach(function(element, index){
+  if((element % 2 === 0)){
+    console.log(element);
+  }else{
+
+  }
+});
+
+let allPrices = [120, 450, 80, 1000, 300, 50];
+allPrices.forEach(function(element, index){
+if(element > 400){
+  console.log("Преміум товар");
+}else{
+  console.log("Бюджетний товар");
+}
+});
+
+
+let users = ["Danya", "Olya"];
+users.push("Igor");
+users.unshift("Admin");
+users.pop(); 
+if(users.includes("Admin")){
+  console.log("Система готова, адмін на місці");
+}else{
+
+};
+let data = [10, 15, 20, 25, 30];
+data.forEach(function(element, index){
+  if (element > 15 && element % 2 === 0){
+    console.log(element);
+  }else{
+    
+  }
+});
+
