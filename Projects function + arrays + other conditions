@@ -1,0 +1,109 @@
+//проект 
+let stock = [
+  { id: 1, name: "Laptop", price: 1200, count: 5 },
+  { id: 2, name: "Mouse", price: 25, count: 10 },
+  { id: 3, name: "Keyboard", price: 50, count: 0 }
+];
+stock.forEach(function(element, index){
+console.log("ціна:" + element.price);// виводимо значення ціни ось так
+});
+stock.forEach(function(element, index){
+  if(element.count === 0){ //повинно бути element.count
+    console.log("ТОВАР ЗАКІНЧИВСЯ!");
+  }else{
+    console.log("Є в наявності");
+  }
+});
+//додати новий елемент 
+stock.push({id: 4, name: "Monitor", price: 300, count: 2 });
+console.log(stock);
+
+let menu = [
+  { id: 1, dish: "Pizza", price: 250, category: "Main" },
+  { id: 2, dish: "Salad", price: 120, category: "Starter" },
+  { id: 3, dish: "Cake", price: 90, category: "Dessert" },
+  { id: 4, dish: "Coffee", price: 0, category: "Drink" } // Це безкоштовний бонус
+];
+
+menu.forEach(function(element, index){
+console.log("dish:" + element.dish + "category:" + element.category + "price:" + element.price);
+});
+menu.forEach(function(element, index){
+if(element.price > 200){
+  console.log("Дорога страва:" + element.dish);
+}else{
+  console.log("Доступна страва:" + element.dish);
+}
+});
+menu.forEach(function(element, index){
+  if(element.price === 0){
+console.log("Сьогодні" + element.dish +  "у подарунок!");
+  }else{
+    console.log();
+  }
+});
+menu.push({id: 5, dish: "Ліниві вареники", price: 40, category: "Main"});
+console.log(menu);
+
+
+
+let sneakers = [
+  { brand: "Nike", price: 3000, inStock: true },
+  { brand: "Adidas", price: 2500, inStock: false },
+  { brand: "Puma", price: 1500, inStock: true },
+  { brand: "Reebok", price: 2000, inStock: true }
+];
+let totalSum = 0;
+sneakers.forEach(function(element, index){
+totalSum = totalSum + element.price;
+console.log("Загальна сума:" + totalSum);
+});
+sneakers.forEach(function(element, index){
+if(element.inStock === true){
+  console.log(element.brand + "можна купувати");
+}else{
+  console.log(element.brand +  "немає в наявності");
+}
+});
+sneakers.forEach(function(element, index){
+if(element.price <= 2000){
+  console.log("Акційна ціна на" + element.brand + element.price + "грн");
+}else{
+
+}
+});
+sneakers.push({brand: "New Balance", price: 4000, inStock: true});
+console.log(sneakers);
+
+
+let cinema = [
+  { title: "Spider-Man", ticketPrice: 150, soldTickets: 10 },
+  { title: "Batman", ticketPrice: 200, soldTickets: 5 },
+  { title: "Avatar", ticketPrice: 250, soldTickets: 8 },
+  { title: "Titanic", ticketPrice: 100, soldTickets: 0 } 
+];                                                                  
+let totalIncome = 0
+cinema.forEach(function(element, index){
+totalIncome = element.ticketPrice * element.soldTickets;
+console.log(totalIncome);
+});
+cinema.forEach(function(element,index){
+if(element.soldTickets > 0){
+  console.log("Фільм" + element.title + "продано" + element.soldTickets + "квитків");
+}else{
+  console.log("На фільм" + element.title + "квитків ще не купували");
+
+}
+});
+cinema.forEach(function(element,index){
+if(element.ticketPrice >= 200){
+  console.log(element.title);
+}else if(element.ticketPrice === 200){
+  console.log(element.title);
+}else{
+  console.log();
+}
+});
+cinema.push({title: "Inception", ticketPrice: 180, soldTickets: 3});
+console.log(cinema);
+
