@@ -1,0 +1,133 @@
+/////logic operation
+let age = 20;
+let hasTicket = true;
+if(age === 18 && hasTicket === true){
+  console.log("Проходьте в зал");
+}else{
+  console.log("");
+}
+
+let dish = "Coffee";
+if(dish === "Coffee" || dish === "Tea"){
+  console.log("Сьогодні безкоштовно");
+}else{
+  console.log("");
+}
+
+let item = { brand: "Nike", inStock: false };
+if(!item.inStock){ //елемент не писати ось так !item.inStock
+console.log("Є в наявності");
+}else{
+  console.log("Зачекайте на нове надходження");
+}
+
+let sensors = [
+  { type: "Temperature", value: 35, isActive: true },
+  { type: "Smoke", value: 0, isActive: false },
+  { type: "Motion", value: 1, isActive: true },
+  { type: "Water Leak", value: 0, isActive: true }
+];
+
+let userPresent = false; // Чи є хтось вдома
+if(sensors[1].value >= 0 || !sensors[1].isActive ){
+  console.log("Увага: Перевірте датчик диму!");
+}else{
+  console.log("");
+}
+
+if(sensors[0].value >= 30 && !sensors[0].isActive){
+  console.log("Вимикаю кондиціонер для економії");
+}else{
+  console.log("");
+}
+sensors.forEach(function(element, index){
+console.log("Датчик" + element.type + "вимкнено" + "тільки для тих датчиків, які НЕ активні" + (!element.isActive));
+
+});
+
+
+let orders = [
+  { customer: "Іван", item: "Espresso", price: 45, isPaid: true, count: 2 },
+  { customer: "Марія", item: "Latte", price: 70, isPaid: false, count: 1 },
+  { customer: "Олег", item: "Cappuccino", price: 60, isPaid: true, count: 3 },
+  { customer: "Анна", item: "Tea", price: 40, isPaid: false, count: 1 }
+];
+
+let isShopOpen = true; // Чи відчинена кав'ярня
+orders.forEach(function(element, index){
+if(!element.isPaid){
+  console.log("Клієнт" + element.customer + "," + "будь ласка, оплатіть ваше замовлення:" + element.item);
+}else{
+  console.log("");
+}
+});
+if(orders[2].price >= 50 && orders[2].count >= 2){
+  console.log("Олег отримує безкоштовне тістечко за велике замовлення!");
+}else{
+  console.log("");
+}
+
+if(!isShopOpen || !orders[3].isPaid){
+  console.log("Замовлення не може бути видане");
+
+}else{
+  console.log("");
+}
+
+
+let gymMembers = [
+  { name: "Артем", type: "Standard", months: 3, isActive: true },
+  { name: "Світлана", type: "VIP", months: 12, isActive: true },
+  { name: "Дмитро", type: "Standard", months: 1, isActive: false },
+  { name: "Ольга", type: "Premium", months: 6, isActive: true }
+];
+
+
+let discountCoupon = "GYM2026"; // Акційний купон
+gymMembers[2].isActive = true;
+gymMembers[2].months = 3;
+
+gymMembers.push({name: "Ігор", type: "Standard", months: 1, isActive: true});
+gymMembers.forEach(function(element, index){
+  if(!element.isActive){
+  console.log("Шановний" + element.name + "ваш абонемент заблоковано Зверніться на рецепцію");
+  }
+});
+if(gymMembers[3].type === "Premium" || gymMembers[3].type === "VIP"){
+  console.log("Ви можете безкоштовно відвідати басейн");
+}else{
+  console.log("");
+}
+if(discountCoupon === "GYM2026"){
+  console.log("Знижка 20% активована!");
+}else{
+  console.log("");
+
+}
+
+
+
+let products = [
+  { name: "iPhone 15", price: 40000, inStock: true, discount: false },
+  { name: "Laptop HP", price: 25000, inStock: false, discount: true },
+  { name: "AirPods", price: 8000, inStock: true, discount: true },
+  { name: "Monitor", price: 12000, inStock: true, discount: false }
+];
+
+products[1].inStock = true;
+products.push({name: "Мишка", price: 1000, inStock: true, discount: false});
+products.forEach(function(element, index){
+if(element.discount === true && element.inStock === true){
+  console.log("Акція на" + element.name + "але тільки для тих товарів, у яких є знижка");
+}else{
+  console.log("");
+}
+});
+let totalPrice = 0;
+let jdj0 = products[0].price;
+let bjb1 = products[1].price;
+let kko2 = products[2].price;
+let kk3 = products[3].price;
+products.forEach(function(element, index){
+console.log(totalPrice + jdj0 + bjb1 + kko2 + kk3 + "загальна сума");   /// or totalPrice = totalPrice + element.price; // Додаємо ціну ПОТОЧНОГО елемента
+});
