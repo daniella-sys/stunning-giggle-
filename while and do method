@@ -1,0 +1,119 @@
+//цикли While loops
+let attempts = 0;
+while(attempts <= 3){
+  console.log( "Спроба №" + attempts);
+  attempts++//обов'язково!!!
+
+}
+console.log("Ліміт спроб вичерпано");
+
+let secretCode = 0;
+do{
+  secretCode += 10 //додавання числа 10 
+  console.log("Генеруємо код: " + secretCode);
+}while(secretCode <= 30);
+
+let timer = 10;
+while(timer <= 10 || timer === 10){
+  console.log(timer);
+  timer -= 1;
+  timer--
+}
+console.log("Запуск!");
+
+let total = 0;
+let step = 5;
+while(total <= 50){
+  total += step //додаємо іншу змінну
+  console.log("Поточна сума:" + total);
+}
+
+let password = ""; 
+let attempts = 0;
+do{
+  attempts += 1;
+  if(attempts === 3){
+    password = "admin";
+  }else{
+
+  }
+  console.log("Спроба №" + attempts + "перевірка пароля...");
+}while(password !== "admin");
+
+let num = 100;
+while(num >= 10){
+  num /= 2;
+  console.log(num);
+}
+
+let star = "";
+do{
+  star += "*";
+
+}while(star.length <= 3);
+
+let i = 1;
+while(i <= 6){
+if(i % 2 !== 0){
+  console.log("|");
+}else if(i % 2 === 0){
+  console.log("-");
+}
+i++
+}
+let balance = 100;
+ let expense = 15;
+ let transactionCount = 0;
+ while(balance >= 15 || balance === 15){
+  balance -= expense
+  transactionCount++
+  console.log("Транзакція №... Залишок: ... грн");
+
+ }
+ console.log("Фінальна кількість транзакцій: ... Баланс: ... грн");
+
+ let resultString = "";
+  let i = 1;
+  while(i <= 10){
+    if(i  % 2 === 0){
+      resultString += "+";
+    }else{
+      resultString += "-";
+    }
+i++
+  }
+  console.log(resultString);
+
+  let pressure = 120;
+   let safetyHits = 0;
+   do{
+    pressure -= 20;
+    safetyHits++
+    console.log(pressure);
+   }while(pressure >= 40);
+   console.log("Система стабілізована за ... кроків");
+
+
+
+
+   let stones = 120; 
+   let stonesPerLevel = 10; 
+   let currentLevel = 0; 
+   let pyramidStructure = "";
+   while(stones >= stonesPerLevel){
+    currentLevel++
+    stones -= stonesPerLevel;
+    if(currentLevel  % 2 === 0){
+      pyramidStructure += "[=]";
+    }else{
+      pyramidStructure += "[#]";
+   }
+   if(currentLevel % 3 === 0){
+    stonesPerLevel += 5;
+    stonesPerLevel++
+    
+   }
+   console.log("Рівень №" + currentLevel + " готовий." + "Залишилось на складі:" + stones);
+  }
+  console.log(pyramidStructure);
+  console.log("Будівництво завершено! Всього рівнів:" + currentLevel + "На складі залишилось каменів: ...");
