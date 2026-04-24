@@ -1,0 +1,74 @@
+//string equality
+let originalPass = "StrongPass123"; 
+let inputPass = "strongpass123";
+if(originalPass === inputPass){
+  console.log("Коректно");
+}else{
+  console.log("Помилка");
+}
+
+let sensorData = "22"; 
+let expectedValue = 22;
+if(sensorData == expectedValue && sensorData !== expectedValue){
+  console.log("Увага: Дані отримано у форматі рядка, конвертуйте в число!");
+}else{
+  console.log("");
+}
+let userRole = "guest";
+if(userRole !== "admin"){
+  console.log("Доступ заборонено. Потрібні права адміністратора");
+}
+
+let statusCode = 200;
+if(statusCode === 200){
+  console.log("Ok");
+}else{
+  console.log("Error");
+}
+let message = statusCode;
+console.log(message);
+
+let balance = 500; 
+let itemPrice = 600;
+if(balance >= 600 || balance === 600){
+  console.log("Купівля дозволена");
+}else{
+  console.log("Недостатньо коштів");
+}
+
+let userName = "";
+if(userName !== ""){
+  console.log("name");
+}else{
+  console.log("Анонім");
+}
+
+let userAge = 20;
+if(userAge >= 18 || userAge === 18){
+  console.log("Доступ відкрито");
+}else{
+  console.log("Доступ обмежено");
+}
+
+
+let isLightOn = true;
+if(isLightOn === true){
+  console.log("Світло ввімкнуто");
+}else{
+  console.log("Світло вимкнуто");
+}
+let mess = isLightOn;
+console.log(mess);
+
+let totalSum = 1200;
+if(totalSum >= 1000){
+  console.log("знижка");
+}else{
+  console.log("");
+}
+let number = 7;
+if(number % 2 === 0){
+  console.log("число парне");
+}else{
+  console.log("число непарне");
+}
