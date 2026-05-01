@@ -1,0 +1,136 @@
+//продовження циклів 
+let distanceToMars = 500; 
+let fuel = 200;
+let scrapCollected = 0; 
+let flightLog = "Початок місії: ";
+while(distanceToMars >= 0 && fuel >= 0){
+  distanceToMars -= 50;
+  fuel -= 20;
+  scrapCollected += 2;
+  if(distanceToMars >= 250){
+    flightLog += "🚀";
+  }else{
+    flightLog += "🔥";
+  }
+  if(fuel <= 60){
+    distanceToMars -= 30;
+  }
+}
+console.log(flightLog);
+console.log(distanceToMars);
+console.log(fuel);
+console.log(scrapCollected);
+
+
+let money = 1000; 
+let price = 120; 
+let bonuses = 0; 
+let purchaseHistory = "Історія покупок: ";
+while(money >= price){
+  money -= price;
+  bonuses += 10;
+  let pбльшенняцни = 0;
+  pбльшенняцни += 15;
+  price += pбльшенняцни;
+  if(money <= 200){
+    purchaseHistory += "🎁";
+  }else{
+    purchaseHistory += "🛍️";
+  }
+  if(bonuses === 40){
+    //+50 money
+    let mon = 0;
+    mon += 50;
+    money += mon;
+  }else{
+
+  }
+
+}
+console.log(purchaseHistory);
+console.log(money);
+console.log(bonuses);
+
+let water = 500;
+let crops = 0; 
+let days = 0; 
+let farmStatus = "Поле: ";
+while(water === 40 || water >= 40){
+  days += 1;
+  water -= 40;
+  crops += 1;
+  if(days % 2 === 0){ //% 2 === 0 Умова парності
+    let dитрат = 0;
+    dитрат += 40;
+    water -= dитрат;
+    farmStatus += "☀️";
+  }else{
+    farmStatus += "🌱";
+  }
+  if(days % 5 === 0){ //% 5 === 0 (умова ділення без залишку )
+    let rain = 0;
+    rain += 100;
+    water += rain;
+    console.log(days +": Пішов дощ! +100л води");
+
+  }else{
+
+  }
+
+}
+console.log(farmStatus);
+console.log(days);
+console.log(crops);
+console.log(water);
+
+let safeCode = 7; 
+let currentTry = 0;
+let maxTries = 5; 
+let isLocked = true;
+while(isLocked === true && currentTry < maxTries){
+currentTry += 1;
+let guess = 1;
+guess *= currentTry;
+if(guess === safeCode){
+  isLocked = false;
+  console.log("Сейф відчинено на спробі " + currentTry);
+}else{
+  console.log("Спроба" + "" +currentTry +  "код" + "" + "не підійшов");
+};
+    if(currentTry === maxTries && isLocked === true){
+     console.log("🚨 СИГНАЛІЗАЦІЯ! Поліція вже їде!");
+}else{
+
+};
+}
+
+console.log(safeCode);
+console.log(currentTry);
+console.log(maxTries);
+console.log(isLocked);
+
+
+let energy = 100;
+let progress = 0; 
+let isFailed = false;
+let artifacts = 0; 
+while(progress < 100 && energy > 0 && isFailed === false){
+  energy -= 15;
+  progress += 20;
+  if(progress % 2 === 0){
+    artifacts += 1
+  }else{
+
+  }
+     if(energy <= 20){
+      isFailed = true;
+      console.log("💥 Котел вибухнув від нестачі сил!");
+     }else if(progress >= 100){
+      console.log("💎 Філософський камінь створено!");
+     }else{}
+
+}
+console.log(progress);
+console.log(energy);
+console.log(artifacts);
+console.log(isFailed);
