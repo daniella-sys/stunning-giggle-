@@ -1,0 +1,108 @@
+//random number generation
+let randomNumber = Math.random();
+console.log();
+
+let testNumber = Math.floor(Math.random());
+console.log(testNumber);
+
+let bigRandom = Math.random() * 10 //будуть числа від 0 до 9.9999999....
+let wholeNumber = Math.floor(bigRandom);
+console.log(wholeNumber);
+
+
+let max = 6;
+let min = 1;
+let diceRoll = Math.floor(Math.random() * max) + min;
+console.log(diceRoll);
+
+
+let randov = Math.floor(Math.random() * 11) + 5;
+console.log(randov);
+
+let damage = Math.floor(Math.random() * 11) + 20;
+console.log(damage);
+//[40;55]
+let critDamage = Math.floor(Math.random() * 16) + 40;
+console.log(critDamage);
+//[1;4]
+let r = Math.floor(Math.random() *4) +1;
+console.log(r);
+//[0;100]
+let successChance = Math.floor(Math.random() * 101) + 0;
+console.log(successChance);
+//[1;10]
+let luck = Math.floor(Math.random() * 10) +1;
+//[10;20]
+let damage = Math.floor(Math.random() * 11) +10;
+if(luck >= 7 || luck === 7){
+    console.log("Влучив! Нанесено шкоди:" + damage);
+}else{
+    console.log("Промах!");
+}
+//[1;5]
+let chance = Math.floor(Math.random() * 5) +1;
+if(chance === 5){
+    console.log("Ти спіймала гігантську рибу!");
+}else{
+    console.log("Спробуй ще раз");
+}
+//[15;25]
+let berries = Math.floor(Math.random() * 11) + 15;
+if(berries >= 20){
+    console.log("Повний кошик! Аж" + berries + "штук");
+}else if(berries <= 20 || berries === 20){
+console.log("Трохи є:" + berries + "ягід");
+}
+//[1;20]
+let roll = Math.floor(Math.random() * 20) + 1;
+if(roll === 1){
+    console.log("Зброя зламалася!");
+}else if(roll === 20){
+    console.log("Мега-удар!");
+}else{
+    console.log("Звичайний хід");
+}
+
+//[1;10]
+let skill = Math.floor(Math.random() * 10) +1;
+//[1;10]
+let stealth = Math.floor(Math.random() * 10) +1;
+   if(skill >= 5 && stealth >= 5){
+       console.log("Ключ у тебе!");
+    }else{
+        console.log("Тебе помітили! Тікай!");
+    }
+
+
+//ціна = 50
+//[30;70]
+let myMoney = Math.floor(Math.random() * 41) + 30;
+//[1;10]
+let charisma = Math.floor(Math.random() * 10) +1;
+    if(myMoney >= 50 || charisma >= 8){
+        console.log("Купівля");
+    }else{}
+
+//0 — відчинена, 1 — замкнена [0;1]
+let isLocked = Math.floor(Math.random() * 2) +1;
+    if(isLocked === 1){
+        console.log("Скриня замкнена, потрібен ключ");
+    }else{
+        //[100;200]
+        let gold = Math.floor(Math.random() * 101) + 100;
+        console.log("Ти знайшла" + gold + "золота!");
+    }
+
+    //[1;100]
+    let stamina = Math.floor(Math.random()* 100) +1;
+    //від 0 до 1 (0 — сухо, 1 — злива).
+    let  isRaining  = Math.floor(Math.random() *2)+1;
+    if(stamina >= 50 && isRaining === 0){
+        console.log("Ти пройшла через гори!");
+    }else if(stamina >= 80){
+        console.log("Ти дуже сильна, дощ не зупинив тебе!");
+    }else{
+        console.log("Ти занадто втомилася або погода жахлива. Повертайся додому");
+    }
+    console.log(stamina);
+    console.log(isRaining);
